@@ -3,8 +3,8 @@
 }
 body
 {
-	/* background-image: url('../images/background2.png');
-	background-size: cover; */
+	background-image: url('../images/background2.png');
+	background-size: cover; 
 
 }
 .left_anchor
@@ -25,22 +25,83 @@ body
     margin-top: 60px;
     display: inline-block;
 }
+.triangle_left
+{
+    height: 0;
+    border-right: 505px solid #222244;
+    border-top: 265px solid transparent;
+    border-bottom: 310px solid transparent;
+    /* position: absolute; */
+    margin-top: 60px;
+    display: inline-block;
+}
 .education_anchor
 {
     visibility: hidden;
     position: absolute;
-    /* left: 0px; */
     z-index: 0;
     top: 0px;
 }
-.visiblity_hidden
+.work_anchor
 {
-	visibility: hidden;
-
+     visibility: hidden; 
+     position: absolute;
+    /* left: 0px; */
+    z-index: 0;
+    top: 0px;   
 }
-.visibility_visible
+.about_me_anchor
 {
-	visibility: visible;
+    
+    right: 0px;
+    visibility: hidden; 
+    position: absolute;
+    /* left: 0px; */
+    z-index:999999;
+    top: 0px; 
+}
+
+.skills_anchor
+{
+    visibility: hidden; 
+    position: absolute;
+    right: 0px;
+    z-index: 10000;
+    top: 0px; 
+}
+.work_header
+{
+    font-size: 40px;
+    border-bottom: 1px solid white;
+    color: #79c8e6;
+    display: inline-block;
+    font-family: 'Product Sans';
+    position: absolute;
+    font-weight: bold;
+    margin-left: -685px;
+    margin-top: -158px;  
+}
+.about_me_header
+{
+    font-size: 40px;
+    border-bottom: 1px solid white;
+    color: #79c8e6;
+    display: inline-block;
+    font-family: 'Product Sans';
+    position: absolute;
+    font-weight: bold;
+    /* margin-left: -685px;
+    margin-top: -158px; */    
+}
+.skills_header
+{
+    font-size: 40px;
+    border-bottom: 1px solid white;
+    color: #79c8e6;
+    display: inline-block;
+    font-family: 'Product Sans';
+    position: absolute;
+    font-weight: bold;
 }
 .education_triangle_right
 {
@@ -52,6 +113,35 @@ body
     margin-top: 1px;
     display: inline-block;
 }
+.work_triangle_right
+{
+    width: 0;
+    height: 0;
+    border-left: 704px solid #222244;
+    border-top: 265px solid transparent;
+    border-bottom: 369px solid transparent;
+    margin-top: 1px;
+    display: inline-block;  
+}
+.about_me_triangle_left
+{
+    width: 0;
+    height: 0;
+    border-right: 704px solid #222244;
+    border-top: 265px solid transparent;
+    border-bottom: 369px solid transparent;
+    display: inline-block; 
+}
+.skills_triangle_left
+{
+    width: 0;
+    height: 0;
+    border-right: 704px solid #222244;
+    border-top: 265px solid transparent;
+    border-bottom: 369px solid transparent;
+    display: inline-block;  
+}
+
 .desinger_button
 {
     width: 334px;
@@ -93,7 +183,44 @@ body
     font-family: 'Product Sans';
     padding-top: 5px;
     font-weight: bold;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+   /*  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); */
+}
+.email
+{
+    margin-top: 8px;
+    display: inline-block;
+    width: 287px;
+    height: 30px;
+    margin-left: -300px;
+    background-color: #00d0bd;
+    z-index: 20;
+    position: absolute;
+    border-radius: 37px 37px 37px 37px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Product Sans';
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.contact_no
+{
+    margin-top: 8px;
+    display: inline-block;
+    width: 180px;
+    height: 30px;
+    margin-left: 372px;
+    background-color: #00d0bd;
+    z-index: 20;
+    position: absolute;
+    border-radius: 37px 37px 37px 37px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Product Sans';
+    padding-top: 5px;
+    font-weight: bold;  
 }
 .about_me
 {
@@ -110,6 +237,9 @@ body
 .about_me:hover
 {
 	border-bottom: 1px solid #9600ff;
+    cursor: pointer;
+/*     background-color: #00d0bd;
+color: white; */
 }
 .skills
 {
@@ -123,6 +253,13 @@ body
     position: absolute;
     font-weight: bold;
 }
+.skills:hover
+{
+    cursor: pointer;
+    border-bottom: 1px solid #9600ff;
+  /*   background-color: #00d0bd;
+  color: white; */
+}
 .right_anchor
 {
 	width: auto;
@@ -132,16 +269,7 @@ body
     right: 0px;
     position: absolute;
 }
-.triangle_left
-{
-	height: 0;
-    border-right: 505px solid #222244;
-    border-top: 265px solid transparent;
-    border-bottom: 310px solid transparent;
-    /* position: absolute; */
-    margin-top: 60px;
-    display: inline-block;
-}
+
 .developer_button
 {
 	display: inline-block;
@@ -166,6 +294,7 @@ body
 {
 	box-shadow: -7px 11px 10px rgba(0, 0, 0, 0.2);
 	margin-top: -417px;
+    /* border-bottom: 1px solid #9600ff; */
 }
 .education
 {
@@ -178,6 +307,13 @@ body
     margin-top: -313px;
     position: absolute;
     font-weight: bold;
+}
+.education:hover ,.work:hover 
+{
+    cursor: pointer;
+    border-bottom: 1px solid #9600ff;
+  /*   background-color: #00d0bd;
+    color: white; */
 }
 .work
 {
@@ -219,6 +355,28 @@ body
     margin-left: -685px;
     margin-top: -158px;
 }
+.about_me_header
+{
+    font-size: 40px;
+    color: #79c8e6;
+    display: inline-block;
+    font-family: 'Product Sans';
+    position: absolute;
+    font-weight: bold;
+    margin-left: 500px;
+    margin-top: -158px;  
+}
+.skills_header
+{
+    font-size: 40px;
+    color: #79c8e6;
+    display: inline-block;
+    font-family: 'Product Sans';
+    position: absolute;
+    font-weight: bold;
+    margin-left: 500px;
+    margin-top: -158px;  
+}
 .home_button
 {
     width: 100px;
@@ -240,11 +398,8 @@ body
 .home_button:hover
 {
 	box-shadow:-7px 11px 10px rgba(0, 0, 0, 0.2);
-	bottom: 101px;
+	/* bottom: 101px; */
+    cursor:pointer; 
 
-}
-.work_anchor
-{
-	 	
 }
 
