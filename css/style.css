@@ -3,9 +3,11 @@
 }
 body
 {
-	background-image: url('../images/background2.png');
-	background-size: cover; 
-
+    background: url('../images/background2.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .left_anchor
 {
@@ -37,7 +39,8 @@ body
 }
 .education_anchor
 {
-    visibility: hidden;
+     visibility: hidden; 
+    /* opacity: 0; */
     position: absolute;
     z-index: 0;
     top: 0px;
@@ -172,7 +175,7 @@ body
 	display: inline-block;
     width: 334px;
     height: 48px;
-    margin-left: 14px;
+    left: 38%;
     background-color: #00d0bd;
     z-index: 20;
     position: absolute;
@@ -191,7 +194,7 @@ body
     display: inline-block;
     width: 287px;
     height: 30px;
-    margin-left: -300px;
+    left: 15%;
     background-color: #00d0bd;
     z-index: 20;
     position: absolute;
@@ -210,7 +213,7 @@ body
     display: inline-block;
     width: 180px;
     height: 30px;
-    margin-left: 372px;
+    left: 65%;
     background-color: #00d0bd;
     z-index: 20;
     position: absolute;
@@ -336,8 +339,9 @@ color: white; */
     margin-top: -72px;
     padding-top: 5px;
     padding-bottom: 3px;
-    margin-left: 495px;
+    left: 37%;
     padding-left: 39px;
+    bottom: 0px;
 }
 .social_media>img
 {
@@ -378,22 +382,24 @@ color: white; */
     margin-top: -158px;  
 }
 .home_button
-{
-    width: 100px;
-    height: 100px;
+{   
+    width: 80px;
+    height: 80px;
+    padding:15px;
     border-radius: 50%;
     color: white;
+    left: 47%;
     display: inline-block;
-    margin-left: 125px;
+    margin: 8px auto;
     background-color: #00d0bd;
     text-align: center;
     position: absolute;
-    bottom: 86px;
+    bottom: 12%;
     font-weight: bold;
     font-size: 52px;
-    padding-top: 24px;
     font-family: 'Product Sans';
     transition: box-shadow 0.4s,bottom 0.4s;
+    z-index: 999999999999;
 }
 .home_button:hover
 {
