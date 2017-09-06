@@ -1,0 +1,143 @@
+<!DOCTYPE html>		
+<html  class="mdc-typography" >
+<head>
+
+	
+	<title>PWA Quiz App</title>
+	
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" type="text/css" href="inline.css"/>
+	
+	<link rel="stylesheet" 
+          href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i|PT+Sans" rel="stylesheet">
+
+	<style type="text/css">
+	 :root {
+        --mdc-theme-primary: #0e4ead;
+      }
+      
+      .mdc-ripple-surface.mdc-ripple-upgraded.mdc-button--primary::before,
+      .mdc-ripple-surface.mdc-ripple-upgraded.mdc-button--primary::after {
+        background-color: rgba(255, 255, 255, .2);
+      }
+      
+      #greeting-form > button {
+        margin-top: 8px;
+      }
+		*
+		{
+			margin:  0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+
+		.options
+		{
+			margin: 50px auto;
+			text-align: center;
+		}
+		.question
+		{
+		/* 	font-family: Monsterrat;
+		font-size: 25px;
+		text-align: center;
+		margin-top: 25px;
+		
+		height: 50px;
+		vertical-align: middle;
+		color: white;
+		line-height: 50px; */
+			margin-top: 100px;
+			background: #2196F3;	
+		}
+		.style_button
+		{
+			display: inline-block;
+		    background-color: #4343a9;
+		    width: 100px;
+		    height: 50px;
+		    /* font-family: Monsterrat; */
+		    border-radius: 5px;
+		    text-align: center;
+		    vertical-align: middle;
+		    line-height: 50px;
+			box-shadow:8px 6px 20px 0px rgba(0, 0, 0, 0.58);
+			color: white;
+			/* font-size:15px;  */
+			margin: 10px auto;
+
+			
+		}
+
+		@media only screen and (max-width: 768px) {
+			
+			.style_button
+			{
+				display: block;
+			}
+		
+
+		}
+		.head
+			{
+				 background-color: #00BCD4;
+				 text-align: center;
+				 
+			}
+		.scorestyle
+		{
+			margin: 0 auto;
+			display: block;
+			text-align: center;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<header class="header head">
+		  <h1 class="header__title ">Quiz App</h1>
+	</header>
+
+	<div class="mdc-toolbar question">
+		<div class="mdc-toolbar__row">
+		    <section class="mdc-toolbar__section">
+		      <span  id="QuestionText" class="mdc-toolbar__title"></span>
+		    </section>
+		  </div>
+	</div>
+     <div class="options">
+			
+			<button  id="Option1" class="mdc-button  mdc-button--raised mdc-button--primary mdc-ripple-surface style_button"></button>
+
+			<button id="Option2" class="mdc-button  mdc-button--raised mdc-button--primary mdc-ripple-surface style_button"></button>
+
+			<button id="Option3" class="mdc-button  mdc-button--raised mdc-button--primary mdc-ripple-surface style_button"></button>			
+						
+			<button id="Option4" class="mdc-button 
+                       mdc-button--raised 
+                       mdc-button--primary 
+                       mdc-ripple-surface
+					   style_button"
+                data-mdc-auto-init="MDCRipple">
+        	</button>		
+
+	  </div>	
+
+	  <div class="scorestyle">
+	  	<button  id="score"  class="mdc-button mdc-button--raised mdc-button--primary mdc-ripple-surface"></button>
+	  </div>
+	<script src="QuizApp.js"></script>
+</body>
+</html>

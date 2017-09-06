@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+    
+    <script src="/bower_components/angular/angular.js"></script> 
+    <script src="/bower_components/angular-aria/angular-aria.js"></script> 
+    <script src="/bower_components/angular-animate/angular-animate.js"></script> 
+    <script src="/bower_components/angular-material/angular-material.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    
+     <script type="text/javascript">
+         angular.module('HingUp',['ngMaterial']);
+    </script>
+    <script src="homepage/homepage.js"> </script>
+    <script src="homepage/HomePageFactory.js"</script>
+    <script>
+ 
+        // Include app dependency on ngMaterial 
+            
+             var config = {
+                                apiKey: "AIzaSyAzfQJyiGG6zk-nwiGB90xcAvRkZwy6O_I",
+                                authDomain: "chandra-clinic.firebaseapp.com",
+                                databaseURL: "https://chandra-clinic.firebaseio.com",
+                                projectId: "chandra-clinic",
+                                storageBucket: "",
+                                messagingSenderId: "470800339694"
+                          };
+             
+              firebase.initializeApp(config);
+
+              var HingUpDatabase = new firebase.database();
+    </script> 
+
+</head>
+    <body ng-app="HingUp" layout="column" >
+ 
+            <div ng-controller="HomePageController">
+                              
+                <form name="SubmitPost" ng-submit="SubmitPost()">
+                    <input type="text" ng-model="" name="post"/>
+                            
+                    <button type="submit">Submit</button>
+                </form>    
+                   
+            </div>      
+    
+
+</body>
+</html>

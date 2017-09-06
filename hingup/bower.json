@@ -1,0 +1,23 @@
+{
+  "name": "hingup",
+  "description": "Experince Sharing Platform",
+  "main": "index.js",
+  "authors": [
+    "gaagn"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "blog",
+    "tech",
+    "express"
+  ],
+  "homepage": "https://github.com/GaganSuneja/GaganSuneja.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
