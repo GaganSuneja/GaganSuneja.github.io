@@ -23,7 +23,7 @@ body
     border-left: 505px solid #222244;
     border-top: 265px solid transparent;
     border-bottom: 310px solid transparent;
-    /* position: absolute; */
+    position: absolute; 
     margin-top: 60px;
     display: inline-block;
 }
