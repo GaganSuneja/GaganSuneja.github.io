@@ -8,7 +8,7 @@
 
 body
 {
-	background-color: rgba(158, 158, 158, 0.03);
+	/* background-color: rgba(158, 158, 158, 0.03); */
 }
 @font-face {
     font-family: 'badaboom_bbregular';
@@ -18,46 +18,54 @@ body
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'times_new_romanbold';
+    src: url('times_new_roman_bold-webfont.woff2') format('woff2'),
+         url('times_new_roman_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 .nick__head
 {
 
 	font-family: Lato;
 	margin-top: 10px;
-	padding: 20px;
 	word-spacing: 5px;
 	font-size: 20px;
 }
 .nick__contact
 {
-	      float: right;
-	      font-family: 'Roboto Slab', serif;
+	     text-align: center; 
+	     font-family: 'times_new_romanbold', serif;
 }
 .nick__email
 {
-		float: left;
-		font-family: 'Roboto Slab', serif;
+		text-align: center;
+		font-family: 'times_new_romanbold', serif;
 }
 
 .nick__title
 {
 		text-align: center; 
-		font-family: 'Pacifico', cursive;
-		font-size: 50px;
+		font-family: 'times_new_romanbold';
+		font-size: 100px;
 }
 
 .nick__card
 {
-    border: 1px solid rgba(0, 0, 0, 0.13);
-    width: 50%;
-    margin: 5px auto;
-    height: auto;
-    border-radius: 12px;
-    box-shadow:16px 17px 20px 6px rgba(0, 0, 0, 0.07);
+    border-right: 1px dotted black;
+    border-bottom: 1px dotted black;
+    width: 100%;
+    margin: 1px auto;
+    height: 100%;
+   /*  border-radius: 12px; */
+    /* box-shadow:16px 17px 20px 6px rgba(0, 0, 0, 0.07); */
 	padding: 10px;
 }
 .nick__card_title
 {
-   font-family: 'badaboom_bbregular' ;
+   font-family: 'times_new_romanbold' ;
    font-size: 25px;
 }
 .nick__row
