@@ -1,6 +1,24 @@
 *{
 	box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'lato black';
+    src: url('../fonts/Lato-Black.eot');
+    src: url('../fonts/Lato-Black.eot') format('embedded-opentype'),
+         url('../fonts/Lato-Black.woff') format('woff'),
+         url('../fonts/Lato-Black.woff2') format('woff2'),
+         url('../fonts/Lato-Black.ttf') format('truetype');
+       
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url('product_sans_regular-webfont.woff2') format('woff2'),
+         url('product_sans_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body
 {
     background: url('../images/background2.png') no-repeat center center fixed;
