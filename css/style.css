@@ -12,9 +12,9 @@
        
 }
 @font-face {
-    font-family: 'Product Sans';
-    src: url('product_sans_regular-webfont.woff2') format('woff2'),
-         url('product_sans_regular-webfont.woff') format('woff');
+    font-family: 'product_sansregular';
+    src: url('../fonts/product_sans_regular-webfont.woff2') format('woff2'),
+         url('../fonts/product_sans_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -26,6 +26,7 @@ body
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: 'product_sansregular';
 }
 .left_anchor
 {
@@ -96,7 +97,7 @@ body
     border-bottom: 1px solid white;
     color: #79c8e6;
     display: inline-block;
-    font-family: 'Product Sans';
+    font-family: 'product_sansregular';
     position: absolute;
     font-weight: bold;
     margin-left: -685px;
@@ -108,9 +109,9 @@ body
     border-bottom: 1px solid white;
     color: #79c8e6;
     display: inline-block;
-    font-family: 'Product Sans';
+   //* font-family: 'product_sansregular'; */
     position: absolute;
-    font-weight: bold;
+    /* font-weight: bold; */
     /* margin-left: -685px;
     margin-top: -158px; */    
 }
@@ -120,7 +121,7 @@ body
     border-bottom: 1px solid white;
     color: #79c8e6;
     display: inline-block;
-    font-family: 'Product Sans';
+    font-family: 'product_sansregular';
     position: absolute;
     font-weight: bold;
 }
@@ -175,7 +176,7 @@ body
     color: white;
     font-size: 40px;
     text-align: center;
-    font-family: 'Product Sans';
+    font-family: 'product_sansregular';
     padding-top: 5px;
     font-weight: bold;
     transition: box-shadow 0.4s,margin-top 0.4s;
@@ -201,7 +202,7 @@ body
     color: white;
     font-size: 40px;
     text-align: center;
-    font-family: 'Product Sans';
+    font-family: 'product_sansregular';
     padding-top: 5px;
     font-weight: bold;
    /*  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); */
@@ -220,7 +221,7 @@ body
     color: white;
     font-size: 20px;
     text-align: center;
-    font-family: 'Product Sans';
+    font-family: 'product_sansregular';
     padding-top: 5px;
     font-weight: bold;
 }
@@ -239,7 +240,7 @@ body
     color: white;
     font-size: 20px;
     text-align: center;
-    font-family: 'Product Sans';
+    font-family: 'product_sansregular';
     padding-top: 5px;
     font-weight: bold;  
 }
@@ -249,7 +250,7 @@ body
     border-bottom: 1px solid white;
     color: #79c8e6;
     display: inline-block;
-    font-family: 'Product Sans';
+    font-family: 'product_sansregular';
     margin-left: 152px;
     margin-top: 313px;
     position: absolute;
@@ -268,7 +269,7 @@ color: white; */
     border-bottom: 1px solid white;
     color: #79c8e6;
     display: inline-block;
-    font-family: 'Product Sans';
+    font-family: 'product_sansregular';
     margin-left: 152px;
     margin-top: 390px;
     position: absolute;
@@ -306,7 +307,7 @@ color: white; */
     color: white;
     font-size: 40px;
     text-align: center;
-    font-family: 'Product Sans';
+    font-family: 'product_sansregular';
     padding-top: 5px;
     font-weight: bold;
 	transition: box-shadow 0.4s,margin-top 0.4s;
@@ -323,7 +324,7 @@ color: white; */
     border-bottom: 1px solid white;
     color: #79c8e6;
     display: inline-block;
-    font-family: 'Product Sans';
+    font-family: 'product_sansregular';
     margin-left: 203px;
     margin-top: -313px;
     position: absolute;
@@ -342,7 +343,7 @@ color: white; */
     border-bottom: 1px solid white;
     color: #79c8e6;
     display: inline-block;
-    font-family: 'Product Sans';
+    font-family: 'product_sansregular';
     margin-left: 285px;
     margin-top: -229px;
     position: absolute;
@@ -371,7 +372,7 @@ color: white; */
     border-bottom: 1px solid white;
     color: #79c8e6;
     display: inline-block;
-    font-family: 'Product Sans';
+    font-family: 'product_sansregular';
     position: absolute;
     font-weight: bold;
     margin-left: -685px;
@@ -382,7 +383,7 @@ color: white; */
     font-size: 40px;
     color: #79c8e6;
     display: inline-block;
-    font-family: 'Product Sans';
+    font-family: 'product_sansregular';
     position: absolute;
     font-weight: bold;
     margin-left: 500px;
@@ -393,7 +394,7 @@ color: white; */
     font-size: 40px;
     color: #79c8e6;
     display: inline-block;
-    font-family: 'Product Sans';
+    font-family: 'product_sansregular';
     position: absolute;
     font-weight: bold;
     margin-left: 500px;
@@ -415,7 +416,7 @@ color: white; */
     bottom: 12%;
     font-weight: bold;
     font-size: 52px;
-    font-family: 'Product Sans';
+    font-family: 'product_sansregular';
     transition: box-shadow 0.4s,bottom 0.4s;
     z-index: 999999999999;
 }
