@@ -149,7 +149,7 @@ body
 {
     width: 334px;
     height: 50px;
-    margin-top: -413px;
+    margin-top: 223px;
     margin-left: 135px;
     background-color: #00d0bd;
     position: absolute;
@@ -166,7 +166,7 @@ body
 .desinger_button:hover
 {
 	box-shadow: 10px 20px 10px rgba(0, 0, 0,0.2);
-	margin-top: -425px;
+	margin-top: 213px;
 }
 
 .name_button
@@ -233,7 +233,7 @@ body
     display: inline-block;
     font-family: 'Product Sans';
     margin-left: 152px;
-    margin-top: -313px;
+    margin-top: 313px;
     position: absolute;
     font-weight: bold;
 }
@@ -252,7 +252,7 @@ color: white; */
     display: inline-block;
     font-family: 'Product Sans';
     margin-left: 152px;
-    margin-top: -229px;
+    margin-top: 390px;
     position: absolute;
     font-weight: bold;
 }
