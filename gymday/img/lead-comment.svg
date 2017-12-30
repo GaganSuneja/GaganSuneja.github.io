@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="407" height="148" viewBox="0 0 407 148">
+    <defs>
+        <rect id="b" width="352.8" height="93.6" rx="7.2"/>
+        <filter id="a" width="126.9%" height="201.5%" x="-13.5%" y="-35.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="14" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="13.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.489158741 0"/>
+        </filter>
+        <circle id="c" cx="14.4" cy="14.4" r="14.4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(27 13)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#FFF" xlink:href="#b"/>
+        </g>
+        <text fill="#0D1F2D" font-family="ProximaNova-Regular, Proxima Nova" font-size="14.4" transform="translate(27 13)">
+            <tspan x="75.6" y="31">Give her additional 10% discount on</tspan> <tspan x="75.6" y="48">purchasing yoga class pack</tspan>
+        </text>
+        <path fill="#DFE3E9" d="M65.7 24.7h1.8v68.4h-1.8z"/>
+        <g fill-rule="nonzero">
+            <g transform="translate(52.2 45.4)">
+                <use fill="#1CBDA5" fill-rule="evenodd" xlink:href="#c"/>
+                <circle cx="14.4" cy="14.4" r="17.1" stroke="#FFF" stroke-width="5.4"/>
+            </g>
+            <path fill="#FFF" d="M73.017 53.486H60.183c-.728 0-1.337.645-1.337 1.417v8.785c0 .771.61 1.417 1.337 1.417h4.01l1.7 2.159a.9.9 0 0 0 1.414 0l1.7-2.16h4.01c.728 0 1.337-.645 1.337-1.416v-8.785c0-.772-.61-1.417-1.337-1.417z"/>
+            <g fill="#88C057" transform="translate(61.615 57.917)">
+                <ellipse cx="1.454" cy="1.755" rx="1.107" ry="1.108"/>
+                <ellipse cx="5.123" cy="1.755" rx="1.107" ry="1.108"/>
+                <ellipse cx="8.793" cy="1.755" rx="1.107" ry="1.108"/>
+            </g>
+        </g>
+        <text fill="#7E95A3" font-family="ProximaNova-Regular, Proxima Nova" font-size="12.6" transform="translate(27 13)">
+            <tspan x="75.6" y="72.3">by Priya kumar</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="407" height="148" viewBox="0 0 407 148">
+    <defs>
+        <rect id="b" width="352.8" height="93.6" rx="7.2"/>
+        <filter id="a" width="126.9%" height="201.5%" x="-13.5%" y="-35.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="14" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="13.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.489158741 0"/>
+        </filter>
+        <path id="c" d="M0 14.376C0 6.436 6.436 0 14.375 0c7.94 0 14.376 6.436 14.376 14.376 0 7.939-6.436 14.375-14.376 14.375C6.436 28.75 0 22.315 0 14.376z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(27 13)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#FFF" xlink:href="#b"/>
+        </g>
+        <text fill="#0D1F2D" font-family="ProximaNova-Regular, Proxima Nova" font-size="14.4" transform="translate(27 13)">
+            <tspan x="75.6" y="31">Lead transferred from Rohit Sardana to </tspan> <tspan x="75.6" y="48" font-family="ProximaNova-Semibold, Proxima Nova" font-weight="500">Priya Kumar</tspan>
+        </text>
+        <path fill="#DFE3E9" d="M65.7 24.7h1.8v68.4h-1.8z"/>
+        <text fill="#7E95A3" font-family="ProximaNova-Regular, Proxima Nova" font-size="12.6" transform="translate(27 13)">
+            <tspan x="75.6" y="72.3">by Rohit Saradana</tspan>
+        </text>
+        <g fill-rule="nonzero">
+            <g transform="translate(52.2 45.4)">
+                <use fill="#DB3186" fill-rule="evenodd" xlink:href="#c"/>
+                <path stroke="#FFF" stroke-width="5.4" d="M-2.7 14.376C-2.7 4.945 4.945-2.7 14.375-2.7c9.431 0 17.076 7.645 17.076 17.076 0 9.43-7.645 17.075-17.076 17.075-9.43 0-17.075-7.645-17.075-17.075z"/>
+            </g>
+            <g fill="#FFF">
+                <path d="M75.323 55.874l-1.53.004c-1.146-2.546-3.396-4.385-6.238-4.827-3.166-.491-6.197.966-8.004 3.53-.802 1.137 1.084 2.203 1.88 1.074 2.478-3.515 7.77-3.197 9.945.229l-1.413.003a.333.333 0 0 0-.283.14.308.308 0 0 0-.031.4l2.69 4.136c.15.231.476.23.625-.003l2.67-4.148c.146-.229-.047-.538-.311-.538zM71.486 63.442c-2.46 3.488-7.69 3.202-9.895-.15l1.354-.002a.333.333 0 0 0 .283-.14c.095-.1.13-.248.032-.4l-2.69-4.135a.368.368 0 0 0-.625.002l-2.67 4.148c-.147.229.047.538.31.538l1.577-.004c1.158 2.504 3.388 4.31 6.2 4.747 3.166.491 6.197-.966 8.004-3.529.802-1.139-1.084-2.204-1.88-1.075z"/>
+            </g>
+        </g>
+    </g>
+</svg>
