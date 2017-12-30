@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 1440 2407" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>C3B6F0CF-56D1-4A3D-A243-24F93DD8030C</title>
+<desc>Created with sketchtool.</desc>
+<defs>
+<path id="a" d="m1324.4 5326.5h2304.1c55.228 0 100 44.772 100 100v2234c0 55.228-44.772 100-100 100-7.9283 0-15.828-0.94285-23.534-2.8087l-3160-765.16c-53.677-12.997-86.655-67.048-73.657-120.73 2.2791-9.4124 5.9134-18.444 10.789-26.811l855.87-1468.8c17.915-30.745 50.818-49.655 86.402-49.655z"/>
+<filter id="b" x="-2.2%" y="-2.5%" width="104.5%" height="106.2%">
+<feOffset dx="0" dy="15" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="22.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.352   0 0 0 0 0.088   0 0 0 0 0.88  0 0 0 0.21 0"/>
+</filter>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<g transform="translate(0 -2622)">
+<g transform="translate(-2138 -2487)">
+<g transform="translate(2048.5 6543.5) rotate(45) translate(-2048.5 -6543.5)">
+<use fill="black" filter="url(#b)" xlink:href="#a"/>
+<use fill="#FBFAFC" fill-rule="evenodd" xlink:href="#a"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

@@ -6,6 +6,11 @@
   src: url("../fonts/Lato-Black.eot");
   src: url("../fonts/Lato-Black.eot") format("embedded-opentype"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.ttf") format("truetype"); }
 @font-face {
+  font {
+    family: 'lato black';
+    src: url("../fonts/Lato-Black.eot");
+    src: url("../fonts/Lato-Black.eot") format("embedded-opentype"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.ttf") format("truetype"); } }
+@font-face {
   font-family: 'product_sansregular';
   src: url("../fonts/product_sans_regular-webfont.woff2") format("woff2"), url("../fonts/product_sans_regular-webfont.woff") format("woff");
   font-weight: normal;
@@ -32,6 +37,28 @@ body {
     position: absolute;
     margin-top: 60px;
     display: inline-block; }
+  .left_anchor .about_me_anchor {
+    right: 0px;
+    visibility: hidden;
+    position: absolute;
+    /* left: 0px; */
+    z-index: 999999;
+    top: 0px; }
+  .left_anchor .skills_anchor {
+    visibility: hidden;
+    position: absolute;
+    right: 0px;
+    z-index: 10000;
+    top: 0px; }
+
+.triangle_left {
+  height: 0;
+  border-right: 505px solid #222244;
+  border-top: 265px solid transparent;
+  border-bottom: 310px solid transparent;
+  /* position: absolute; */
+  margin-top: 60px;
+  display: inline-block; }
 
 .education_anchor {
   visibility: hidden;
@@ -45,21 +72,6 @@ body {
   position: absolute;
   /* left: 0px; */
   z-index: 0;
-  top: 0px; }
-
-.about_me_anchor {
-  right: 0px;
-  visibility: hidden;
-  position: absolute;
-  /* left: 0px; */
-  z-index: 999999;
-  top: 0px; }
-
-.skills_anchor {
-  visibility: hidden;
-  position: absolute;
-  right: 0px;
-  z-index: 10000;
   top: 0px; }
 
 .work_header {
@@ -153,7 +165,7 @@ body {
   width: 334px;
   height: 48px;
   left: 38%;
-  background-color: #00d0bd;
+  background-color: background-button-color;
   z-index: 20;
   position: absolute;
   border-radius: 37px 37px 37px 37px;
@@ -171,7 +183,7 @@ body {
   width: 287px;
   height: 30px;
   left: 15%;
-  background-color: #00d0bd;
+  background-color: background-button-color;
   z-index: 20;
   position: absolute;
   border-radius: 37px 37px 37px 37px;
@@ -188,7 +200,7 @@ body {
   width: 180px;
   height: 30px;
   left: 65%;
-  background-color: #00d0bd;
+  background-color: background-button-color;
   z-index: 20;
   position: absolute;
   border-radius: 37px 37px 37px 37px;
@@ -213,7 +225,7 @@ body {
 .about_me:hover {
   border-bottom: 1px solid #9600ff;
   cursor: pointer;
-  /*     background-color: #00d0bd;
+  /*     background-color: background-button-color;
   color: white; */ }
 
 .skills {
@@ -230,7 +242,7 @@ body {
 .skills:hover {
   cursor: pointer;
   border-bottom: 1px solid #9600ff;
-  /*   background-color: #00d0bd;
+  /*   background-color: background-button-color;
   color: white; */ }
 
 .right_anchor {
@@ -240,14 +252,6 @@ body {
   /* margin-left: 321px; */
   right: 0px;
   position: absolute; }
-  .right_anchor .triangle_left {
-    height: 0;
-    border-right: 505px solid #222244;
-    border-top: 265px solid transparent;
-    border-bottom: 310px solid transparent;
-    /* position: absolute; */
-    margin-top: 60px;
-    display: inline-block; }
 
 .developer_button {
   display: inline-block;
@@ -256,7 +260,7 @@ body {
   margin: 10px auto;
   margin-top: -405px;
   margin-left: 38px;
-  background-color: #00d0bd;
+  background-color: background-button-color;
   z-index: 20;
   position: absolute;
   border-radius: 37px 37px 37px 37px;
@@ -287,7 +291,7 @@ body {
 .education:hover, .work:hover {
   cursor: pointer;
   border-bottom: 1px solid #9600ff;
-  /*   background-color: #00d0bd;
+  /*   background-color: background-button-color;
     color: white; */ }
 
 .work {
@@ -371,4 +375,4 @@ body {
   /* bottom: 101px; */
   cursor: pointer; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style_new.css.map */

@@ -1,0 +1,454 @@
+*{
+	box-sizing: border-box;
+ }
+
+$fontProduct_sans: 'product_sansregular';
+$border_bottom_static : 1px solid white;
+$color_of_button: #00d0bd;
+
+@font-face {
+    font-family: 'lato black';
+    src: url('../fonts/Lato-Black.eot');
+    src: url('../fonts/Lato-Black.eot') format('embedded-opentype'),
+         url('../fonts/Lato-Black.woff') format('woff'),
+         url('../fonts/Lato-Black.woff2') format('woff2'),
+         url('../fonts/Lato-Black.ttf') format('truetype');
+       
+}
+
+@font-face {
+     font{
+         family:'lato black';   
+         
+         src: url('../fonts/Lato-Black.eot');
+         src: url('../fonts/Lato-Black.eot') format('embedded-opentype'),
+         url('../fonts/Lato-Black.woff') format('woff'),
+         url('../fonts/Lato-Black.woff2') format('woff2'),
+         url('../fonts/Lato-Black.ttf') format('truetype');
+      }
+    }
+
+@font-face {
+    font-family: 'product_sansregular';
+    src: url('../fonts/product_sans_regular-webfont.woff2') format('woff2'),
+         url('../fonts/product_sans_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    background: url('../images/background2.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'product_sansregular';
+}
+
+
+
+
+.left_anchor
+{
+	width: auto;
+	height: auto;
+	display: inline-block;
+	visibility: visible;
+     
+        .triangle_right
+        {
+            /* width: 0; */
+            height: 0;
+            border-left: 505px solid #222244;
+            border-top: 265px solid transparent;
+            border-bottom: 310px solid transparent;
+            position: absolute; 
+            margin-top: 60px;
+            display: inline-block;
+        }
+        .about_me_anchor
+        {
+            
+            right: 0px;
+            visibility: hidden; 
+            position: absolute;
+            /* left: 0px; */
+            z-index:999999;
+            top: 0px; 
+        }
+
+        .skills_anchor
+        {
+            visibility: hidden; 
+            position: absolute;
+            right: 0px;
+            z-index: 10000;
+            top: 0px; 
+        }
+}
+
+.triangle_left
+{
+    height: 0;
+    border-right: 505px solid #222244;
+    border-top: 265px solid transparent;
+    border-bottom: 310px solid transparent;
+    /* position: absolute; */
+    margin-top: 60px;
+    display: inline-block;
+}
+.education_anchor
+{
+     visibility: hidden; 
+    /* opacity: 0; */
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+}
+.work_anchor
+{
+     visibility: hidden; 
+     position: absolute;
+    /* left: 0px; */
+    z-index: 0;
+    top: 0px;   
+}
+
+.work_header
+{
+    font-size: 40px;
+    border-bottom: $border_bottom_static ;
+    color: #79c8e6;
+    display: inline-block;
+    font-family: $fontProduct_sans;
+    position: absolute;
+    font-weight: bold;
+    margin-left: -685px;
+    margin-top: -158px;  
+}
+.about_me_header
+{
+    font-size: 40px;
+    border-bottom:$border_bottom_static ;
+    color: #79c8e6;
+    display: inline-block;
+   //* font-family: 'product_sansregular'; */
+    position: absolute;
+    /* font-weight: bold; */
+    /* margin-left: -685px;
+    margin-top: -158px; */    
+}
+.skills_header
+{
+    font-size: 40px;
+    border-bottom:$border_bottom_static ;
+    color: #79c8e6;
+    display: inline-block;
+    font-family: 'product_sansregular';
+    position: absolute;
+    font-weight: bold;
+}
+.education_triangle_right
+{
+	width: 0;
+    height: 0;
+    border-left: 704px solid #222244;
+    border-top: 265px solid transparent;
+    border-bottom: 369px solid transparent;
+    margin-top: 1px;
+    display: inline-block;
+}
+.work_triangle_right
+{
+    width: 0;
+    height: 0;
+    border-left: 704px solid #222244;
+    border-top: 265px solid transparent;
+    border-bottom: 369px solid transparent;
+    margin-top: 1px;
+    display: inline-block;  
+}
+.about_me_triangle_left
+{
+    width: 0;
+    height: 0;
+    border-right: 704px solid #222244;
+    border-top: 265px solid transparent;
+    border-bottom: 369px solid transparent;
+    display: inline-block; 
+}
+.skills_triangle_left
+{
+    width: 0;
+    height: 0;
+    border-right: 704px solid #222244;
+    border-top: 265px solid transparent;
+    border-bottom: 369px solid transparent;
+    display: inline-block;  
+}
+
+.desinger_button
+{
+    width: 334px;
+    height: 50px;
+    margin-top: 223px;
+    margin-left: 135px;
+    background-color:$color_of_button;
+    position: absolute;
+    border-radius: 37px 37px 37px 37px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: $fontProduct_sans;
+    padding-top: 5px;
+    font-weight: bold;
+    transition: box-shadow 0.4s,margin-top 0.4s;
+   /*  box-shadow: 10px 10px 10px rgba(0, 0, 0,0.2); */
+}
+.desinger_button:hover
+{
+	box-shadow: 10px 20px 10px rgba(0, 0, 0,0.2);
+	margin-top: 213px;
+}
+
+.name_button
+{
+	margin-top: 8px;
+	display: inline-block;
+    width: 334px;
+    height: 48px;
+    left: 38%;
+    background-color: background-button-color;
+    z-index: 20;
+    position: absolute;
+    border-radius: 37px 37px 37px 37px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'product_sansregular';
+    padding-top: 5px;
+    font-weight: bold;
+   /*  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); */
+}
+.email
+{
+    margin-top: 8px;
+    display: inline-block;
+    width: 287px;
+    height: 30px;
+    left: 15%;
+    background-color: background-button-color;
+    z-index: 20;
+    position: absolute;
+    border-radius: 37px 37px 37px 37px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: $fontProduct_sans;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.contact_no
+{
+    margin-top: 8px;
+    display: inline-block;
+    width: 180px;
+    height: 30px;
+    left: 65%;
+    background-color: background-button-color;
+    z-index: 20;
+    position: absolute;
+    border-radius: 37px 37px 37px 37px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'product_sansregular';
+    padding-top: 5px;
+    font-weight: bold;  
+}
+.about_me
+{
+	font-size: 40px;
+    border-bottom: 1px solid white;
+    color: #79c8e6;
+    display: inline-block;
+    font-family: 'product_sansregular';
+    margin-left: 152px;
+    margin-top: 313px;
+    position: absolute;
+    font-weight: bold;
+}
+.about_me:hover
+{
+	border-bottom: 1px solid #9600ff;
+    cursor: pointer;
+/*     background-color: background-button-color;
+color: white; */
+}
+.skills
+{
+	font-size: 40px;
+    border-bottom: 1px solid white;
+    color: #79c8e6;
+    display: inline-block;
+    font-family: 'product_sansregular';
+    margin-left: 152px;
+    margin-top: 390px;
+    position: absolute;
+    font-weight: bold;
+}
+.skills:hover
+{
+    cursor: pointer;
+    border-bottom: 1px solid #9600ff;
+  /*   background-color: background-button-color;
+  color: white; */
+}
+.right_anchor
+{
+	width: auto;
+    height: auto;
+    display: inline-block;
+    /* margin-left: 321px; */
+    right: 0px;
+    position: absolute;
+}
+
+.developer_button
+{
+	display: inline-block;
+    width: 334px;
+    height: 48px;
+    margin: 10px auto;
+    margin-top: -405px;
+    margin-left: 38px;
+    background-color: background-button-color;
+    z-index: 20;
+    position: absolute;
+    border-radius: 37px 37px 37px 37px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'product_sansregular';
+    padding-top: 5px;
+    font-weight: bold;
+	transition: box-shadow 0.4s,margin-top 0.4s;
+}
+.developer_button:hover
+{
+	box-shadow: -7px 11px 10px rgba(0, 0, 0, 0.2);
+	margin-top: -417px;
+    /* border-bottom: 1px solid #9600ff; */
+}
+.education
+{
+	font-size: 40px;
+    border-bottom: 1px solid white;
+    color: #79c8e6;
+    display: inline-block;
+    font-family: 'product_sansregular';
+    margin-left: 203px;
+    margin-top: -313px;
+    position: absolute;
+    font-weight: bold;
+}
+.education:hover ,.work:hover 
+{
+    cursor: pointer;
+    border-bottom: 1px solid #9600ff;
+  /*   background-color: background-button-color;
+    color: white; */
+}
+.work
+{
+	font-size: 40px;
+    border-bottom: 1px solid white;
+    color: #79c8e6;
+    display: inline-block;
+    font-family: 'product_sansregular';
+    margin-left: 285px;
+    margin-top: -229px;
+    position: absolute;
+    font-weight: bold;
+}
+.social_media
+{
+ 	background: #222244;
+    border-radius: 72px;
+    width: auto;
+    position: absolute;
+    margin-top: -72px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    left: 37%;
+    padding-left: 39px;
+    bottom: 0px;
+}
+.social_media>img
+{
+	margin-right: 25px;
+}
+.education_header
+{
+    font-size: 40px;
+    border-bottom: 1px solid white;
+    color: #79c8e6;
+    display: inline-block;
+    font-family: 'product_sansregular';
+    position: absolute;
+    font-weight: bold;
+    margin-left: -685px;
+    margin-top: -158px;
+}
+.about_me_header
+{
+    font-size: 40px;
+    color: #79c8e6;
+    display: inline-block;
+    font-family: 'product_sansregular';
+    position: absolute;
+    font-weight: bold;
+    margin-left: 500px;
+    margin-top: -158px;  
+}
+.skills_header
+{
+    font-size: 40px;
+    color: #79c8e6;
+    display: inline-block;
+    font-family: 'product_sansregular';
+    position: absolute;
+    font-weight: bold;
+    margin-left: 500px;
+    margin-top: -158px;  
+}
+.home_button
+{   
+    width: 80px;
+    height: 80px;
+    padding:15px;
+    border-radius: 50%;
+    color: white;
+    left: 47%;
+    display: inline-block;
+    margin: 8px auto;
+    background-color: $color_of_button;
+    text-align: center;
+    position: absolute;
+    bottom: 12%;
+    font-weight: bold;
+    font-size: 52px;
+    font-family: 'product_sansregular';
+    transition: box-shadow 0.4s,bottom 0.4s;
+    z-index: 999999999999;
+}
+.home_button:hover
+{
+	box-shadow:-7px 11px 10px rgba(0, 0, 0, 0.2);
+	/* bottom: 101px; */
+    cursor:pointer; 
+
+}
+
