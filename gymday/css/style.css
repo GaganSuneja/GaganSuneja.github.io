@@ -246,7 +246,6 @@ nav.navbar{
 	font-weight: bold;
 	line-height: 1.43;
   cursor: pointer;
-  f
 }
 .navbar-nav>li:last-child{
 	width: 120px;
@@ -272,6 +271,16 @@ nav.navbar{
 background-position:top left,top left;
 background-repeat: no-repeat,no-repeat;
 background-size: contain; */
+}
+.intro-row{
+  padding-top: 110px;
+}
+.section-intro{
+  overflow: hidden;
+  width:100%;
+  margin-top:-104px;
+  padding-top: 122px;
+  padding-bottom:10px;
 }
 .back-shapes{
     overflow: hidden;
@@ -341,7 +350,7 @@ background-size: contain; */
     height: 56px;
     padding: 16px;
     text-align: center;
-    background-color: #8d00ce;
+    background-color: #7A51CC;
     border:solid 1px #7a51cc;
     border-radius: 100px;
     box-shadow: 0px 8px 20px 0px rgba(141, 0, 206, 0.27);
@@ -788,6 +797,15 @@ background-repeat: no-repeat,no-repeat;  */
   background-repeat: no-repeat;
   background-position: top left; 
 } 
+@media (max-width: 1200px){
+    
+    .section-intro{
+      margin-top:-200px; 
+    }
+    .intro-row{
+      padding-top: 150px;
+    }
+}
 @media (max-width: 768px){
     body{
         width: 100%;
