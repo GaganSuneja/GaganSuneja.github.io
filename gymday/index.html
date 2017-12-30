@@ -22,22 +22,26 @@
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 	<link rel="stylesheet" href="css/style.css">
-	
  </head>
  <body>
  	<!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
- 	<div class="navigation" style="position: absolute;width: 100%;background: transparent;z-index:2	">
- 		<header class="container" style="padding-left:7px;">
-				<div class="navbar-header" style="padding-left: 0px" id="g-bar">	
-					<div class="ImageResp inline-block" style="padding-top: 24px;">
+ 	<div class="navigation navbar navbar-fixed-top" id="g-bar">
+ 		<div class="container">
+				<div class="navbar-header" style="padding-left: 0px;padding-right: 0px" >	
+					<div class="ImageResp inline-block nav-image">
 						<a class="navbar-brand" href="#">
 							<img src="img/logoText1.svg" alt="gymday"/>
 						</a>
 						<!-- <div style="display: inline-block;padding-top: 4px;font-size: 24px;color:#aa91db">GYMDAY</div> -->
 					</div>		
+					<div class="inline-block nav-button" >
+						<div class="" style="width: 22px;height: 1.9px;background-color: #546a7b;margin-bottom: 5.3px"> </div>
+						<div class="" style="width: 22px;height: 1.9px;background-color: #546a7b;margin-bottom: 5.3px"></div>
+						<div class="" style="width: 22px;height: 1.9px;background-color: #546a7b;"></div>
+					</div>
 					<ul class="nav navbar-nav">
 						<li><a href="">home</a></li>
 						<li><a href="">features </a></li>
@@ -47,14 +51,9 @@
 						<li><a href="">contact us</a></li>
 						<li><a href="">login</a></li>
 					</ul>
-					<!-- <div class="inline-block float-right" >
-						<div class="" style="width: 22px;height: 1.9px;background-color: #546a7b;"> </div>
-						<div class="" style="width: 22px;height: 1.9px;background-color: #546a7b;"></div>
-						<div class="" style="width: 22px;height: 1.9px;background-color: #546a7b;"></div>
-					</div> -->
 				</div>
-			</nav> 			
- 		</header>
+			</div> 			
+ 		</div>
  	</div>
 	<div class="section-intro">
 		 	 <div class="container">
@@ -454,7 +453,7 @@
 		   var offset = startchange.offset();
 		   console.log("offset is",offset);
 		    if (startchange.length){
-		   $('body').scroll(function() { 
+		   $(document).scroll(function() { 
 		   	  console.log(scroll_start);
 		      scroll_start = $(this).scrollTop();
 		      if(scroll_start > offset.top) {

@@ -1,6 +1,6 @@
 /* CSS RESET*/
 html,body{padding:0;margin:0;border:0;outline:none;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: 100%;width:100%;
-height: 100%;font-family: "Proxima Nova";font-size: 16px;overflow: hidden;}
+height: 100%;font-family: "Proxima Nova";font-size: 16px;}
 html {font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100% } 
 *,*:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing:border-box; box-sizing: border-box } 
 div, section, aside, article, header, nav, footer, address, form, h1, h2, h3, h4, h5, h6, p, ul, ol, ul li, ol li, span, img, a, table, thead, tbody, tfoot, tr, th, td, dt, dd {font-family: inherit, sans-serif; padding: 0; margin: 0; border: 0; outline: none; background: none;}
@@ -35,7 +35,6 @@ label, input[type=text], input[type=tel], input[type=email], input[type=password
 
 body{
 	background-color: #fafbfc;
-	overflow-y:scroll; 
 	z-index:1000;
 	font-family: 'Nunito Sans', sans-serif;
 }
@@ -236,7 +235,7 @@ nav.navbar{
 .navbar-nav>li{
 	text-transform: uppercase;
 	margin-top:15px;
-}x    
+}
 .navbar-nav li a:hover,.nav li a:hover{
   color:#1cbda5;
 }
@@ -266,22 +265,39 @@ nav.navbar{
 	padding-top: 11px !important;
 	color:#fff !important;	
 }
+.nav-button{
+  display: none;
+}
+.nav-image{
+  padding-top: 24px;
+}
+/* .navigation{
+position: absolute;width: 100%;background: transparent;z-index:2
+} */
 .navigation{
-/* background-image:url('../img/bg.svg'),url('../img/purple-bg.svg');
-background-position:top left,top left;
-background-repeat: no-repeat,no-repeat;
-background-size: contain; */
+      
+        background: transparent;
+        z-index: 2;
+        /* position: fixed;  */
 }
 .intro-row{
   padding-top: 110px;
 }
 .section-intro{
-  overflow: hidden;
-  width:100%;
-  margin-top:-104px;
-  padding-top: 122px;
-  padding-bottom:10px;
+/*   overflow: hidden;
+width:100%;
+margin-top:-104px;
+padding-top: 122px;
+padding-bottom:10px; */
+
+position: relative;
+    overflow: hidden;
+    width: 100%;
+    top: -193px;
+    padding-top: 209px;
+    padding-bottom: 10px 
 }
+
 .back-shapes{
     overflow: hidden;
     position: relative;
@@ -310,7 +326,7 @@ background-size: contain; */
     position: relative;
     top:-101.83vh;/* 92.83%;  -713px;92.83 */
     left: 51vw;/*  51%; */
-    background-color: rgba(170,145,21,0.2);
+    background-color:rgba(170, 145, 219, 0.2);
     -webkit-transform: skew(-38deg,3deg);
     -ms-transform: skew(-38deg,3deg);
 }
@@ -807,10 +823,10 @@ background-repeat: no-repeat,no-repeat;  */
 @media (max-width: 1200px){
     
     .section-intro{
-      margin-top:-200px; 
+      margin-top:-200px;
     }
     .intro-row{
-      padding-top: 150px;
+      padding-top: 300px;
     }
 }
 @media (max-width: 768px){
@@ -856,10 +872,11 @@ background-repeat: no-repeat,no-repeat;  */
     .navbar-header{
         padding-left: 0;
         padding-right: 0;	
+        padding-top: 24px;
     }
     .navbar-brand{
         height: 50px !important;
-        padding: 10px 0 0px 11px!important;
+        padding: 0px 0 0px 11px!important;
     }
     .uses{
         padding-bottom: 35px;
@@ -944,6 +961,14 @@ background-repeat: no-repeat,no-repeat;  */
     .section-sales{
       margin-top: 0px;
       padding-top: 10px;
+    }
+    .nav-button{
+      display: inline-block;
+      float: right ;
+      padding-top: 12px;
+    }
+    .nav-image{
+      padding-top: 0px;
     }
 }
 
