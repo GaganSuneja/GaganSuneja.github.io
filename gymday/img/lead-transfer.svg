@@ -1,44 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="407px" height="148px" viewBox="0 0 407 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-    <title>58FEC215-8347-433D-9BF1-52D863F2A89B</title>
-    <desc>Created with sketchtool.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="407" height="148" viewBox="0 0 407 148">
     <defs>
-        <rect id="path-1" x="0" y="0" width="352.8" height="93.6" rx="7.2"></rect>
-        <filter x="-13.5%" y="-35.8%" width="126.9%" height="201.5%" filterUnits="objectBoundingBox" id="filter-2">
-            <feOffset dx="0" dy="14" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="13.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.489158741 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        <rect id="b" width="352.8" height="93.6" rx="7.2"/>
+        <filter id="a" width="126.9%" height="201.5%" x="-13.5%" y="-35.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="14" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="13.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.489158741 0"/>
         </filter>
-        <path d="M0,14.3755461 C0,6.43555412 6.43619155,0 14.3753143,0 C22.3149006,0 28.7510922,6.43561207 28.7510922,14.3755461 C28.7510922,22.3146688 22.3149006,28.7508604 14.3753143,28.7508604 C6.43619155,28.7508604 0,22.3146688 0,14.3755461 Z" id="path-3"></path>
+        <path id="c" d="M0 14.376C0 6.436 6.436 0 14.375 0c7.94 0 14.376 6.436 14.376 14.376 0 7.939-6.436 14.375-14.376 14.375C6.436 28.75 0 22.315 0 14.376z"/>
     </defs>
-    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Landing-page" transform="translate(-966.000000, -2215.000000)">
-            <g id="Panel-3" transform="translate(265.000000, 2155.000000)">
-                <g id="Lead-transfer" transform="translate(728.000000, 73.000000)">
-                    <g id="Base-Copy-2">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
-                    </g>
-                    <text id="Lead-transferred-fro" font-family="ProximaNova-Regular, Proxima Nova" font-size="14.4" font-weight="normal" fill="#0D1F2D">
-                        <tspan x="75.6" y="31">Lead transferred from Rohit Sardana to </tspan>
-                        <tspan x="75.6" y="48" font-family="ProximaNova-Semibold, Proxima Nova" font-weight="500">Priya Kumar</tspan>
-                    </text>
-                    <rect id="Rectangle-11" fill="#DFE3E9" x="38.7" y="11.7" width="1.8" height="68.4"></rect>
-                    <text id="by-Rohit-Saradana" font-family="ProximaNova-Regular, Proxima Nova" font-size="12.6" font-weight="normal" fill="#7E95A3">
-                        <tspan x="75.6" y="72.3">by Rohit Saradana</tspan>
-                    </text>
-                    <g id="008-arrows" transform="translate(25.200000, 32.400000)" fill-rule="nonzero">
-                        <g id="Shape">
-                            <use fill="#DB3186" fill-rule="evenodd" xlink:href="#path-3"></use>
-                            <path stroke="#FFFFFF" stroke-width="5.4" d="M-2.7,14.3755461 C-2.7,4.94462951 4.94477851,-2.7 14.3753143,-2.7 C23.8062102,-2.7 31.4510922,4.94458398 31.4510922,14.3755461 C31.4510922,23.8059228 23.8059843,31.4508604 14.3753143,31.4508604 C4.94502272,31.4508604 -2.7,23.8058376 -2.7,14.3755461 Z"></path>
-                        </g>
-                        <g id="Group" transform="translate(4.984615, 5.538462)" fill="#FFFFFF">
-                            <path d="M18.1380053,4.93587411 C17.6283091,4.93699646 17.1187113,4.9385092 16.6090151,4.93963156 C15.4627403,2.39349563 13.212846,0.554101874 10.370851,0.113016287 C7.20436056,-0.378428889 4.17371686,1.07863213 2.36662986,3.64170098 C1.56396169,4.77996433 3.45039936,5.84566498 4.24622101,4.71691725 C6.72461167,1.20165202 12.0166262,1.51932733 14.1912579,4.94558492 C13.7204243,4.94665848 13.2495907,4.94782963 12.7787078,4.94890319 C12.6469985,4.94929357 12.553413,5.00731446 12.4955377,5.08929518 C12.4009671,5.18972157 12.3650105,5.3367989 12.4640634,5.48875603 C13.3607111,6.86730098 14.2573589,8.24579714 15.1542036,9.6241469 C15.3049748,9.85579125 15.6301598,9.85388813 15.7795519,9.62190219 C16.6692053,8.23906301 17.5589573,6.85627263 18.4486107,5.47343344 C18.5958355,5.24481457 18.4019657,4.93519094 18.1380053,4.93587411 Z" id="Shape"></path>
-                            <path d="M14.3014918,12.5032319 C11.8423108,15.9918046 6.61230905,15.7058481 4.40674479,12.3544467 C4.85797473,12.3533731 5.30920467,12.352202 5.76048386,12.3511284 C5.89179911,12.350738 5.98523686,12.2930587 6.04325988,12.211322 C6.13802753,12.1108468 6.17418109,11.9638183 6.07507895,11.8113244 C5.17862825,10.4329746 4.28193127,9.05428326 3.38528354,7.67612869 C3.23475863,7.44428915 2.90937658,7.44619227 2.75998455,7.6783734 C1.87028185,9.06101739 0.980382133,10.4438078 0.09053167,11.826647 C-0.0565946076,12.055461 0.137225915,12.3649871 0.401235573,12.3642551 C0.926742857,12.3629375 1.45220089,12.36162 1.97770817,12.3603512 C3.13511469,14.8646184 5.36535598,16.6707807 8.17725586,17.1071817 C11.3437463,17.5986757 14.37439,16.1417611 16.181083,13.578497 C16.9836034,12.4399897 15.097215,11.3743378 14.3014918,12.5032319 Z" id="Shape"></path>
-                        </g>
-                    </g>
-                </g>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(27 13)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#FFF" xlink:href="#b"/>
+        </g>
+        <text fill="#0D1F2D" font-family="ProximaNova-Regular, Proxima Nova" font-size="14.4" transform="translate(27 13)">
+            <tspan x="75.6" y="31">Lead transferred from Rohit Sardana to </tspan> <tspan x="75.6" y="48" font-family="ProximaNova-Semibold, Proxima Nova" font-weight="500">Priya Kumar</tspan>
+        </text>
+        <path fill="#DFE3E9" d="M65.7 24.7h1.8v68.4h-1.8z"/>
+        <text fill="#7E95A3" font-family="ProximaNova-Regular, Proxima Nova" font-size="12.6" transform="translate(27 13)">
+            <tspan x="75.6" y="72.3">by Rohit Saradana</tspan>
+        </text>
+        <g fill-rule="nonzero">
+            <g transform="translate(52.2 45.4)">
+                <use fill="#DB3186" fill-rule="evenodd" xlink:href="#c"/>
+                <path stroke="#FFF" stroke-width="5.4" d="M-2.7 14.376C-2.7 4.945 4.945-2.7 14.375-2.7c9.431 0 17.076 7.645 17.076 17.076 0 9.43-7.645 17.075-17.076 17.075-9.43 0-17.075-7.645-17.075-17.075z"/>
+            </g>
+            <g fill="#FFF">
+                <path d="M75.323 55.874l-1.53.004c-1.146-2.546-3.396-4.385-6.238-4.827-3.166-.491-6.197.966-8.004 3.53-.802 1.137 1.084 2.203 1.88 1.074 2.478-3.515 7.77-3.197 9.945.229l-1.413.003a.333.333 0 0 0-.283.14.308.308 0 0 0-.031.4l2.69 4.136c.15.231.476.23.625-.003l2.67-4.148c.146-.229-.047-.538-.311-.538zM71.486 63.442c-2.46 3.488-7.69 3.202-9.895-.15l1.354-.002a.333.333 0 0 0 .283-.14c.095-.1.13-.248.032-.4l-2.69-4.135a.368.368 0 0 0-.625.002l-2.67 4.148c-.147.229.047.538.31.538l1.577-.004c1.158 2.504 3.388 4.31 6.2 4.747 3.166.491 6.197-.966 8.004-3.529.802-1.139-1.084-2.204-1.88-1.075z"/>
             </g>
         </g>
     </g>

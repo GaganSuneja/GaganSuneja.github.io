@@ -231,6 +231,7 @@ nav.navbar{
 }
 .navbar-nav{
     float: right !important;
+    font-family: 'Nunito Sans',sans-serif;
 }
 .navbar-nav>li{
 	text-transform: uppercase;
@@ -241,7 +242,6 @@ nav.navbar{
 }
 .navbar-nav>li>a{
 	color:#757575;
-  font-family: 'Nunito Sans',sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 1.43;
@@ -290,7 +290,7 @@ background-size: contain; */
 }
 .titled-shape{
     -moz-box-sizing: content-box;
-    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
     width: 63vw;/* 63%; *//* 861px;63%;861px; 63% */
     height:100.5vh;/* * 676px;768px676px;88%;676px;88768 */
     border-bottom-right-radius: 42px;
@@ -460,6 +460,7 @@ background-size: contain; */
 background-position: top left,top right;
 background-repeat: no-repeat,no-repeat;  */
 }
+
 .round-square-f1{
     z-index: -2;
     position: relative;
@@ -485,6 +486,12 @@ background-repeat: no-repeat,no-repeat;  */
     box-shadow: -10px -12px 17px 0px #f0e7fb, 2px 15px 20px 0px #e4cff8;
     -webkit-transform:  rotate(45deg);   
     -ms-transform:  rotate(45deg);   
+}
+
+.section-sales{
+  overflow:hidden;
+  padding-top:200px;
+  margin-top:-1200px;
 }
 .bottom-shape{
     z-index: -2;
@@ -527,7 +534,7 @@ background-repeat: no-repeat,no-repeat;  */
   padding:60px 190px 60px 0px;
 }
 .try-app div:first-child>h2{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 24px;
   font-weight: normal;
   font-style: normal;
@@ -542,7 +549,7 @@ background-repeat: no-repeat,no-repeat;  */
   padding-left: 100px;
 }
 .actions-link p a{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -553,7 +560,7 @@ background-repeat: no-repeat,no-repeat;  */
   color: #7887a7;
 }
 .footer-text1 span {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -566,7 +573,7 @@ background-repeat: no-repeat,no-repeat;  */
   margin-bottom: 11px;
 }
 .footer-text2 ul li a{
-   font-family: 'Montserrat',sans-serif;
+   font-family: 'Nunito Sans',sans-serif;
   font-size: 16px;
   font-weight: bold;
   font-style: normal;
@@ -576,7 +583,7 @@ background-repeat: no-repeat,no-repeat;  */
   color: #7887a7;
 }
 .address p,.address p a{ 
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Nunito Sans',sans-serif;
   font-size: 16px;
   font-weight: 600;
   font-style: normal;
@@ -591,7 +598,7 @@ background-repeat: no-repeat,no-repeat;  */
   margin-bottom: 10px;
 }
 .footer-text3 ul li a,.address p:last-child{  
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Nunito Sans',sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -623,7 +630,7 @@ background-repeat: no-repeat,no-repeat;  */
  padding-bottom: 24px;
 }
 .copyright p{
- font-family: 'Montserrat',sans-serif;
+ font-family: 'Nunito Sans',sans-serif;
   font-size: 12px;
   font-weight: bold;
   font-style: normal;
@@ -933,6 +940,10 @@ background-repeat: no-repeat,no-repeat;  */
     .ImageResp img,.ImageResp a img{
       width: 100%;
       height: auto;
+    }
+    .section-sales{
+      margin-top: 0px;
+      padding-top: 10px;
     }
 }
 
