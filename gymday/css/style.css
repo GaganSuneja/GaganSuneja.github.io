@@ -69,10 +69,11 @@ body{
 a{
   text-decoration: none;
   color: #ffffff;
-  cursor: inherit;
+
 }
 a:hover{
   text-decoration: none;
+  cursor: pointer;
   color:#ffffff ;
 }
 i {
@@ -139,7 +140,7 @@ nav.navbar{
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #0d1f2d;;
+  color: #0d1f2d; 
 }
 .card-text-2{
   font-size: 16px;
@@ -224,24 +225,25 @@ nav.navbar{
 .navbar-nav{
     float: right !important;
 }
-
 .navbar-nav>li{
 	text-transform: uppercase;
 	margin-top:15px;
-    cursor: pointer;
+}
+.navbar-nav li a:hover,.nav li a:hover{
+  color:#1cbda5;
 }
 .navbar-nav>li>a{
 	color:#757575;
+  font-family: 'Nunito Sans',sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 1.43;
-}
-.navbar-nav>li>a:hover{
-	color:#1cbda5;
+  cursor: pointer;
+  f
 }
 .navbar-nav>li:last-child{
 	width: 120px;
-  	height: 40px;
+  height: 40px;
 	border-radius:100px;
 	background-color:#1cbda5;
 	text-align: center;
@@ -249,7 +251,7 @@ nav.navbar{
 	margin-top: 4px;
 	cursor: pointer;
 	margin-top: 20px;
-    margin-left:25px;   
+  margin-left:25px;   
 }
 .navbar-nav>li:last-child:hover{
 	background-color:#1cbda5
@@ -278,10 +280,9 @@ background-size: contain; */
     border-bottom-right-radius: 42px;
     background-color: #fbf9fc;
     position: relative;
-    left: -228px;
+    left: -200px;
     top: -122px;
     box-shadow: 0 2px 49px 0 #562a80;
-    /* z-index: 24; */
     -webkit-transform: skew(-38deg,11deg);
     -ms-transform: skew(-38deg,11deg);
 }
@@ -336,7 +337,7 @@ background-size: contain; */
     background-color: #8d00ce;
     border:solid 1px #7a51cc;
     border-radius: 100px;
-    box-shadow: 0px 8px 20px 0px rgba(141, 0, 206, 0.27);;
+    box-shadow: 0px 8px 20px 0px rgba(141, 0, 206, 0.27);
 }
 .action-button span{
   font-size: 14px;
