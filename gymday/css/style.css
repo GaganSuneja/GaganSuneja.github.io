@@ -352,9 +352,6 @@ padding-bottom:10px; */
   padding-left: 0px;
   width: 50%;
 }
-.featurePadding{
-  padding-right: 0px: 
-}
 .intro-line>h2{
   font-size: 44px;
   font-weight: normal;
@@ -484,7 +481,9 @@ padding-bottom:10px; */
   padding-left:100px;
   padding-top: 235px;
 }
-
+.featurePadding{
+  padding-right: 145px;
+}
 .section-features{
     padding-top: 137px;
     overflow: hidden;
@@ -562,7 +561,7 @@ background-repeat: no-repeat,no-repeat;  */
 .try-app{
   border-top:1px solid #cbe3fa;
   border-bottom:1px solid #cbe3fa;
-  padding:60px 190px 60px 0px;
+  padding:60px 0px 60px 0px;
 }
 .try-app div:first-child>h2{
   font-family: 'Nunito Sans', sans-serif;
@@ -828,6 +827,13 @@ background-repeat: no-repeat,no-repeat;  */
   text-align: center;
   color: #546a7b;"
 }
+.demohidden{
+   display: block; 
+}
+.footer-actionbutton{
+  float: right;
+}
+
 .side-bar{
   width:0%;
   height: 100%;
@@ -880,13 +886,25 @@ background-repeat: no-repeat,no-repeat;  */
 .cardpadd{
  padding-bottom: 24px;
 }
+.cardpadd2{
+ padding-top: 24px;
+ padding-bottom: 24px;  
+}
+.cardpadd3{
+  padding-top: 24px;
+}
+.footercontainer{
+  padding-bottom: 53px;
+  padding-top: 100px;
+  padding-right: 0px;
+}
 @media (max-width: 1920px){
   .titled-shape{
     height: 78.5vh;
   }
   .section-uses{
     padding-top:100px;
-  }
+  } 
 }
 @media(max-width: 1440px){
   .titled-shape{
@@ -1190,12 +1208,15 @@ background-repeat: no-repeat,no-repeat;  */
     padding-right: 20px;
     padding-left: 20px;
   }
+  .try-app{
+    border: 0px;
+  }
   .try-app div:first-child>h2{
     font-size: 16px;
     text-align: center;
     font-weight: bold;
   }
-  .hidden{
+  .demohidden{
     display: none;
   }
   .card-price{
@@ -1209,7 +1230,13 @@ background-repeat: no-repeat,no-repeat;  */
   .cardpadd{
     padding-bottom: 12px;
   }
-
+  .cardpadd2{
+    padding-top: 12px;
+    padding-bottom: 12px;
+   }
+  .cardpadd3{
+    padding-top: 12px;
+  }
   .month-duration-12{
     width: 26px;
     height: 26px;
@@ -1227,7 +1254,7 @@ background-repeat: no-repeat,no-repeat;  */
   }
   .permonth-price-12{
     font-size:7px;
- }
+  }
  .buy-now-button-1{
   padding-top: 0px;
   margin-left: 17.5px;
@@ -1239,7 +1266,6 @@ background-repeat: no-repeat,no-repeat;  */
  .buy-now-button-1 span{
   font-size: 7px;
   }
-  
   .month-duration-6{
     width: 26px;
     height: 26px;
@@ -1270,15 +1296,21 @@ background-repeat: no-repeat,no-repeat;  */
   .month-price-1{
     font-size: 9px;
   }
- .buy-now-button-2{
-  padding-top: 0px;
-  margin-left: 17.5px;
-  width: 70px;
-  height: 24px;
-  border-radius: 50px;
- }
- .buy-now-button-2 span{
-  font-size: 7px;
+  .buy-now-button-2{
+   padding-top: 0px;
+   margin-left: 17.5px;
+   width: 70px;
+   height: 24px;
+   border-radius: 50px;
   }
-  
+  .buy-now-button-2 span{
+   font-size: 7px;
+  }
+  .footer-actionbutton{
+    float: none;
+    margin: 10px auto;
+  }
+  .footercontainer{
+    padding-top: 50px;
+  }
 }
