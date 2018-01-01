@@ -6,7 +6,8 @@
  <head>
   	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="">
     <meta name="description" content="">
     <title>Gymday | Software for fitness clubs</title>
     <link rel="apple-touch-icon" href="img/favicon.ico">
@@ -30,7 +31,7 @@
 
  	<div class="navigation navbar navbar-fixed-top" id="g-bar">
  		<div class="container">
-				<div class="navbar-header" style="padding-left: 0px;padding-right: 0px" >	
+				<div class="navbar-header navpadding">	
 					<div class="ImageResp inline-block nav-image">
 						<a class="navbar-brand" href="#">
 							<img src="img/logoText1.svg" alt="gymday"/>
@@ -58,38 +59,34 @@
 	<div class="section-intro">
 		 	 <div class="container">
 	 			<div class="row intro-row">
-	 				<div id="startchange" class="col-sm-6 col-lg-6 intro-left" style="padding-left:15px">
-	 					<div class="intro-line">
+	 				<div id="startchange" class="col-sm-12  col-xs-12 intro-left" >
+	 					<div class="intro-line" >
 							<h2>Powering the best gyms and fitness studios</h2>
 	 					</div>
+	 					<div class="imageIpad" >
+							<picture>
+										<source media="(max-width:768px)" srcset="img/ipad-illustration.png" >
+										<source media="(min-width:1360px)" srcset="img/ipad-illustration.png">
+										<source media="(min-width:1500px)" srcset="img/ipad-illustration@3x.png">
+										<img src="img/ipad-illustration.png" alt="Ipad"	;" style="width: 100%" />
+							</picture>
+						</div>					  
+	 				
 	 					<div class="intro-base">
 	 						<h3>India's #1 software for fitness studios and gyms</h3>
 	 					</div>
-	 					<div style="margin-top: 40px;margin-left: 15px;" class="action-button pointer">
+	 				
+						<div  class="intro-button action-button pointer">
 	 						<span><a href="" >GET FREE DEMO</a></span>
 	 					</div>
-	 				</div>
-	 				<div class="col-sm-6 col-xs-12 col-lg-6 ImageResp">
-	 						
-						<picture>
-									<source media="(max-width:768px)" srcset="img/ipad-illustration@2xx.png" >
-									<source media="(min-width:1360px)" srcset="img/ipad-illustration@2xx.png">
-									<source media="(min-width:1900px)" srcset="img/ipad-illustration@2xx.png">
-									<img src="img/ipad-illustration.png" alt="Ipad" style="width: 100%;height: auto" />
-						</picture>
 
-	 						<!-- <img src="img/ipad-illustration.png"
-	 							     						 style="position: absolute;top: -19px;left: -68px;width: 100%"
-	 							     						 srcset="img/ipad-illustration@2x.png 2x,
-	 							            					     img/ipad-illustration@3x.png 3x"/> -->
 	 				</div>
-	 				
 	 			</div>
 	 		  </div>
 		 	 <div class="back-shapes">
-		 			 	<div class="titled-shape">
+				<div class="titled-shape">
 		 				 				
-		 				</div>
+		 		</div>
 		 		<div class="shadow-shape">
 		 		</div>
 		 	</div> 
@@ -125,26 +122,27 @@
 		</div>
 	</div>
  	<div class="section-adv" style="overflow:hidden">
- 	  		<div class="container-fluid">
+ 	  		<div class="container">
  	  			<div class="row">
- 	  				<div class="col-sm-6 col-xs-12 col-sm-push-6 ImageResp" style="padding-left:0px">
- 	  							
-						<picture>
-									<source media="(max-width:768px)" srcset="img/pos@3xx.png" >
-									<source media="(min-width:1360px)" srcset="img/pos@3xx.png">
-									<source media="(min-width:1900px)" srcset="img/pos@3xx.png">
-									<img src="img/pos.png" alt="Ipad"  />
-						</picture>
+ 	  				<div class="col-sm-6 col-xs-12 col-sm-push-6 " style="padding-left:0px">	
+				<!-- 			<picture>
+							<source media="(max-width:768px)" srcset="img/pos.png" >
+							<source media="(min-width:1360px)" srcset="img/pos@2x.png">
+							<source media="(min-width:1900px)" srcset="img/pos@3x.png">
+							<img src="img/pos.png" alt="Ipad"  style="max-width: 700px;" />
+				</picture> -->
+ 	  					 <img src="img/pos@2x.png"
+ 	  					      srcset="img/pos@2x.png 2x,
+ 	  					 	  		  img/pos@3x.png 3x"
+ 	  					 	  style="width: 100%" 
+ 	  					 	  >
 
- 	  					<!-- <img src="img/pos.png"
- 	  					 	  				 	     					 width="100%" 
- 	  					 	  				 	     					 srcset="img/pos@2x.png 2x,
- 	  					 	  				 	           						 img/pos@3x.png 3x">
- 	  					 	  				 --> 	  				</div>
- 	  				<div class="col-sm-6 col-xs-12 col-sm-pull-6" class="left-adv">
+
+ 	  					</div>
+ 	  				  	<div class="col-sm-6 col-xs-12 col-sm-pull-6" class="left-adv">
  	  					<div class="adv">
  	  		 					<h2 class="adv-tag">Selling made quick and easy</h2>
- 	  		 					<div class="adv-sub-tag" style="padding-right:129px;">
+ 	  		 					<div class="adv-sub-tag advpadd" >
  	  		 						<h5>Sell memberships, personal training packages and classes to new and old customers quickly through Point Of Sale</h5>
  	  		 					</div>
  	  					</div>
@@ -155,12 +153,12 @@
 	<div  class="section-features" style="overflow:hidden;">
 	 		<div class="container">
 	 				<div class="row">
-	 					<div class="col-sm-6 col-xs-12 ImageResp">
+	 					<div class="col-sm-6 col-xs-12 featureImg ImageResp">
 	 						<picture>
-									<source media="(max-width:768px)" srcset="img/devices@2xx.png" >
-									<source media="(min-width:1360px)" srcset="img/devices@2xx.png">
-									<source media="(min-width:1900px)" srcset="img/devices@2xx.png">
-									<img src="img/devices.png" alt="Ipad" />
+									<source media="(max-width:768px)" srcset="img/devices.png" >
+									<source media="(min-width:1360px)" srcset="img/devices@2x.png">
+									<source media="(min-width:1900px)" srcset="img/devices@3x.png">
+									<img src="img/devices.png" alt="Ipad" style="width:100%;height:auto" />
 							</picture>
 	 					<!-- 	<img src="img/devices.png" 
 	 						     srcset="img/devices@2x.png 2x,
@@ -169,7 +167,7 @@
 	 					<div class="col-sm-6 col-xs-12">
 	 					  <div class="features" >
 	 						 <h2 class="adv-tag">Mobile apps to keep your businees flexible </h2>
-	 						 <div class="adv-sub-tag featurePadding" style="padding-right:0px" >
+	 						 <div class="adv-sub-tag featurePadding" >
 		 						<h5>Run your business from the comfort of your palm. Add customer and leads,manage trails,
 		 						    make sales and track transactions from the iOS and Android app's
 		 						</h5>
@@ -186,7 +184,7 @@
 	 		</div> 
 		 		
 	</div>
-	<div class="section-sales" >
+	<div class="section-sales"	>
 			<div class="container">
 			   <div class="row">
 			   	    <div style="height:450px;" class="col-sm-6 col-xs-12 col-sm-push-6 sales-1">
@@ -300,8 +298,7 @@
 				<div class="col-sm-12 col-xs-12" style="padding-top:50px;">
 					<div class="card-price" style="display: table;margin: 0 auto;">
 						
-						<div class="inline-block width100 border-bottom-light" style="padding-bottom: 24px;">
-						
+						<div class="inline-block width100 border-bottom-light cardpadd">
 							<div class="inline-block float-left ">
 								<div class="block month-duration-12">
 								  <span>12</span>
@@ -370,20 +367,29 @@
 		</div>
 	</div>
 	<footer class="section-footer">
-		<div class="container" style="padding-bottom: 53px;">
-			<div class="row">
-				<div class="col-sm-12 col-xs-12 " style="padding-top: 100px;padding-right: 0px">
+		<div class="container" style="padding-bottom: 53px;padding-top: 100px;padding-right: 0px">
+			<div class="row try-app" >
+				<div class="col-sm-8 col-xs-12 footerpadd">
+					<h2>Give your business the gymday advantage. <span class="hidden">request your free demo now!</span></h2>
+				</div>
+				<div class="col-sm-4 col-xs-12">
+					<div class="action-button pointer">
+				 		<span><a href="" >GET FREE DEMO</a></span>
+					 </div>
+				</div>
+
+				<!-- <div class="col-sm-12 col-xs-12 " style="padding-top: 100px;padding-right: 0px">
 					<div class="try-app" style="padding-right:0px">
 						<div class="inline-block width75" style="padding-right:407px">
-						   <h2>Give your business the gymday advantage. request your free demo now!</h2>
+						   
 						</div>
 						<div class="width25 inline-block float-right">
 							<div class="action-button pointer">
- 								<span><a href="" >GET FREE DEMO</a></span>
- 							</div>
+				 								<span><a href="" >GET FREE DEMO</a></span>
+				 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<div class="row" style="padding-top:25px;">
 				<div class="col-sm-7 col-xs-12 ">
@@ -410,7 +416,7 @@
 					
 				</div>
 				<div class="col-sm-5 col-xs-12 ">
-					<div class="address align-left inline-block" style="padding-left: 155px;width:90%">
+					<div class="address align-left inline-block">
 						<p><span style="color:rgba(84, 106, 123, 0.48);">+91 </span>816 835 7043</p>
 						<p><a href="mailto:support@gymday.in">support@gymday.in</a></p>
 						<p >111, Aggarwal City Sqaure Sector 7<br/> Rohini New Delhi</p>
@@ -420,7 +426,7 @@
 						<img class="block margin-bottom15" src="img/attherate.svg"/>
 						<img class="block " src="img/address.svg"/>
 					</div>
-					<div class="align-right" style="padding-top:66px;padding-left: 155px;">
+					<div class="align-right social-icons">
 						
 						<a target="_blank" href="https://www.facebook.com/gymday.in" class="behance-share margin-right10"><img src="img/facebook(1).svg"/></a>
 	                    <a target="_blank" href="https://www.facebook.com/gymday.in" class="facebook-share margin-right10"><img src="img/twitter.svg"/></a>
@@ -437,7 +443,20 @@
 				<p>&copy; 2018 Gymday Technology Pvt Ltd</p>
 		</div>
 	</footer>
-
+	<section class="side-bar">
+		<aside class="side-bar-shadow">			
+		</aside>	
+		 <aside id="ss" class="side-bar-inner">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</aside>
+		
+	</section>
  	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.11.3.min.js"></script>
     <!-- jQuery CDN fallback -->
     <script type="text/javascript">
@@ -447,25 +466,37 @@
     </script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
+		var sidefilter = false;
 		$(document).ready(function(){       
 		   var scroll_start = 0;
 		   var startchange = $('#startchange');
 		   var offset = startchange.offset();
-		   console.log("offset is",offset);
-		    if (startchange.length){
-		   $(document).scroll(function() { 
-		   	  console.log(scroll_start);
-		      scroll_start = $(this).scrollTop();
-		      if(scroll_start > offset.top) {
-		          $("#g-bar").css('background-color', '#fafbfc');
-		       } else  {
-		          $("#g-bar").css('background-color', 'transparent');
-		       }
-		   });
+		   if (startchange.length){
+				   $(document).scroll(function() { 
+				      scroll_start = $(this).scrollTop();
+				      if((scroll_start > offset.top) && (sidefilter!==true)){
+				          $("#g-bar").css('background-color', '#fafbfc');
+				       } else  {
+				          $("#g-bar").css('background-color', 'transparent');
+				       }
+				   });
 		    }
+		  })
+
+		 $('.nav-button').click(function(){
+			sidefilter = true;
+			$('.nav-button').css('display','none');
+			$('.side-bar').css('width','100%');
+			$('.side-bar-inner').css('width','50%');
+		});
+		
+		$('.side-bar-shadow').click(function(){
+			sidefilter = false;
+			$('.side-bar-inner').css('width','0%');	
+			$('.side-bar').css('width','0%');
+			$('.nav-button').css('display','inline-block');
 		});
 	</script>
 
  </body>
-
  </html>

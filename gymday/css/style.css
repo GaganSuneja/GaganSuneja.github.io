@@ -278,10 +278,23 @@ position: absolute;width: 100%;background: transparent;z-index:2
       
         background: transparent;
         z-index: 2;
-        /* position: fixed;  */
 }
 .intro-row{
   padding-top: 110px;
+}
+.intro-button{
+  margin-top: 40px;
+  margin-left: 15px;
+}
+.imageIpad{
+      float:right;
+      margin-top: -200px;
+      width: 50%;
+
+}
+.navpadding{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .section-intro{
 /*   overflow: hidden;
@@ -290,18 +303,18 @@ margin-top:-104px;
 padding-top: 122px;
 padding-bottom:10px; */
 
-position: relative;
+    position: relative;
     overflow: hidden;
     width: 100%;
     top: -193px;
     padding-top: 209px;
-    padding-bottom: 10px 
 }
 
 .back-shapes{
     overflow: hidden;
     position: relative;
-    top: -590px;
+    top: -700px;/* -950px; */
+    z-index: -1;
     z-index: -1;
 }
 .titled-shape{
@@ -332,10 +345,15 @@ position: relative;
 }
 .intro-left{
     padding:50px;
+    padding-left:15px;
 }
 .intro-line{
   color: #455166;
   padding-left: 0px;
+  width: 50%;
+}
+.featurePadding{
+  padding-right: 0px: 
 }
 .intro-line>h2{
   font-size: 44px;
@@ -459,7 +477,7 @@ position: relative;
 
 .section-uses{
   overflow:hidden;
-  margin-top:-1120px
+  margin-top:-100%;  /* -1120px */
 }
 
 .features{
@@ -530,9 +548,6 @@ background-repeat: no-repeat,no-repeat;  */
 }
 .Devices{
   object-fit: contain;
-}
-.featurePadding{
-    padding-right: 102px;
 }
 .sales-1{
   height: 450px;
@@ -813,13 +828,83 @@ background-repeat: no-repeat,no-repeat;  */
   text-align: center;
   color: #546a7b;"
 }
+.side-bar{
+  width:0%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 2000;
+}
 
+.side-bar-shadow{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color:rgba(0,0,0,0.12);
+}
 
-.bg-bottom{
-  background: url('../img/bottom-triangle(1).svg');
-  background-repeat: no-repeat;
-  background-position: top left; 
-} 
+.side-bar-inner{
+  width: 0;
+  height: 100%;
+  background-color: #fafbfc;
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  right: 0px;
+  transition-property: width;
+  transition: all 0.5s;
+}
+
+.side-bar-inner ul li{
+  font-family: 'Nunito Sans',sans-serif;
+  font-size: 40px;
+}
+
+.advpadd{
+  padding-right:129px;
+}
+.footerpadd{
+  padding-right: 40px;
+}
+
+.address{
+   padding-left: 155px;
+   width:90%;
+}
+.social-icons{
+  padding-top:66px;
+  padding-left: 155px;
+}
+.cardpadd{
+ padding-bottom: 24px;
+}
+@media (max-width: 1920px){
+  .titled-shape{
+    height: 78.5vh;
+  }
+  .section-uses{
+    padding-top:100px;
+  }
+}
+@media(max-width: 1440px){
+  .titled-shape{
+    height: 101.5vh;
+  }
+  .section-uses{
+    padding-top:100px;
+  }
+}
+@media(max-width: 1366px){
+  .titled-shape{
+    height: 101.5vh;
+  }
+  .section-uses{
+    padding-top:0px;
+  }
+}
+
 @media (max-width: 1200px){
     
     .section-intro{
@@ -829,7 +914,23 @@ background-repeat: no-repeat,no-repeat;  */
       padding-top: 300px;
     }
 }
-@media (max-width: 768px){
+
+
+/* @media only screen and (max-width: 768px){
+   .navbar-nav>li{
+        display: none;
+    }  
+
+   .nav-button{
+      display: inline-block;
+      float: right ;
+      padding-top: 12px;
+    }
+    .nav-image{
+      padding-top: 0px;
+    }
+} */
+@media  (max-width: 768px){
     body{
         width: 100%;
         overflow-x: hidden;
@@ -848,11 +949,15 @@ background-repeat: no-repeat,no-repeat;  */
       display: none;
     }
     .section-uses{
-      margin-top: 0px;
+      margin-top: -150px;
     }
-
-    .into-line{
-        padding:20px;
+    .intro-line{
+       padding: 20px;
+       width: 66%;
+    }
+    .imageIpad{
+      float:right;
+      margin-top: -200px;
     }
     .uses-heading>h3{
         font-size:22px;
@@ -886,13 +991,13 @@ background-repeat: no-repeat,no-repeat;  */
     }
     .adv{
         padding-top:10px;
-        padding-right:00px;
-        padding-left:0px;
+        padding-right:0px;
+        padding-left:40px;
     }
     .adv-tag{
         font-size:24px;
         text-align: center;
-        font-weight: 100px;
+        font-weight: bold;
     }
     .adv-sub-tag{
        padding-right:10px;
@@ -901,9 +1006,12 @@ background-repeat: no-repeat,no-repeat;  */
         text-align: center;
         font-size:14px;
     }
+    .advpadd{
+      padding-right: 0px;
+    }
     .features{
       padding-left: 0px;
-      padding-top: 0px;
+      padding-top: 50px;
     }
     .section-features{
         padding-top: 23px;
@@ -918,7 +1026,7 @@ background-repeat: no-repeat,no-repeat;  */
       overflow:hidden;
     }
     .sale2padding{
-      padding-top: 0px;
+      padding-top: 80px;
       padding-left: 0px;
     }
     .card-center{
@@ -953,7 +1061,10 @@ background-repeat: no-repeat,no-repeat;  */
     .lead-actions>img:nth-child(2){
       width:71%;
     }
-
+    .imageIpad{
+        width: 50%;
+      margin-top: -89px
+    }
     .ImageResp img,.ImageResp a img{
       width: 100%;
       height: auto;
@@ -961,6 +1072,7 @@ background-repeat: no-repeat,no-repeat;  */
     .section-sales{
       margin-top: 0px;
       padding-top: 10px;
+      padding-left: 50px;
     }
     .nav-button{
       display: inline-block;
@@ -970,6 +1082,203 @@ background-repeat: no-repeat,no-repeat;  */
     .nav-image{
       padding-top: 0px;
     }
+    .section-intro{
+      padding-left: 50px;
+    }
+    .section-adv{
+      padding-top: 20px;
+    }
+    .navpadding{
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    .footerpadd{
+      padding-right: 0px;
+    }
+    .try-app{
+      padding: 60px 30px 60px 0px;
+    } 
+
+    .address{
+      padding-left: 0px;
+    }
+
+    .social-icons{
+      padding-left: 0px;
+    }
 }
 
+@media (max-width: 480px){
+  
+  .nav-image{
+    padding-top: 0px;
+  }
+  .nav-image>a> img{
+    width: 70%;
+  }
+  .section-intro{
+    padding-left: 35px;
+  }
+  .intro-line{
+    width: 100%;
+    padding: 0px;
+  }
+  .intro-line h2{
+   font-size: 18px;
+  }
+  .intro-row{
+    padding-top: 250px;
+  }
+  
+  .intro-base h3{
+    font-size: 10px;
+  }
+  .sub-use-1{
+    padding-right: 41px;
+    padding-left: 58px;
+  }
+  .sub-use-2{
+    padding-right: 41px;
+    padding-left: 58px; 
+  }
+  .sub-use-3{
+    padding-right: 46px;
+    padding-left: 64px;
+  }
+  .action-button{
+    width: 200px;
+    height: 36px;
+    padding-top: 4px;
+    border-radius: 50px;
+    background-color: #7a51cc;
+  }
+  .action-button span{
+    font-size: 8px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .adv-tag{  
+    font-size: 16px;
+    font-weight: 600;
+    color: #455166;
+  }
+  .adv-sub-tag h5{
+   font-size: 9px;
+  }
+  .imageIpad{
+    width: 100%;
+    margin-top: 0px;
+  }
+  .adv{
+      padding: 10px;
+  }
+  .intro-button{
+    margin-left: 25px;
+  }
+  .featureImg{
+    padding-top: 30px;
+  }
+  .features{
+    padding-top: 10px;
+  }
+  .featurePadding{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .try-app div:first-child>h2{
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .hidden{
+    display: none;
+  }
+  .card-price{
+    width: 276px;
+    height: 196px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 0.5px rgba(122, 81, 204, 0.2);
+    padding: 18px 22.5px 18px 28.5px;
+  }
+  .cardpadd{
+    padding-bottom: 12px;
+  }
 
+  .month-duration-12{
+    width: 26px;
+    height: 26px;
+    border: solid 1px #1cbda5;
+    padding: 3px;
+  }
+  .month-duration-12>span{
+    font-size: 14px;
+  }
+  .month-12{
+    font-size: 7px;
+  }
+  .month-price-12{
+    font-size: 9px;
+  }
+  .permonth-price-12{
+    font-size:7px;
+ }
+ .buy-now-button-1{
+  padding-top: 0px;
+  margin-left: 17.5px;
+  width: 70px;
+  height: 24px;
+  border-radius: 50px;
+  background-color: #1cbda5;
+  }
+ .buy-now-button-1 span{
+  font-size: 7px;
+  }
+  
+  .month-duration-6{
+    width: 26px;
+    height: 26px;
+    border: solid 1px;
+    padding: 3px;
+  }
+  .month-duration-6>span{
+    font-size: 14px;
+  }
+  .month-6{
+    font-size: 7px;
+  }
+  .month-price-6{
+    font-size: 9px;
+  }
+  .month-duration-1{
+    width: 26px;
+    height: 26px;
+    border: solid 1px;
+    padding: 3px;
+  }
+  .month-duration-1>span{
+    font-size: 14px;
+  }
+  .month-1{
+    font-size: 7px;
+  }
+  .month-price-1{
+    font-size: 9px;
+  }
+ .buy-now-button-2{
+  padding-top: 0px;
+  margin-left: 17.5px;
+  width: 70px;
+  height: 24px;
+  border-radius: 50px;
+ }
+ .buy-now-button-2 span{
+  font-size: 7px;
+  }
+  
+}
