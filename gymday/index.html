@@ -20,9 +20,17 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    
+   
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+	
 	<link rel="stylesheet" href="css/style.css">
+
  </head>
  <body>
  	<!--[if lt IE 8]>
@@ -83,8 +91,7 @@
 	 			</div>
 	 		  </div>
 		 	 <div class="back-shapes">
-				<div class="titled-shape">
-		 				 				
+				<div class="titled-shape"> 				
 		 		</div>
 		 		<div class="shadow-shape">
 		 		</div>
@@ -175,15 +182,14 @@
 	<div class="section-sales"	>
 			<div class="container">
 			   <div class="row">
-			   	    <div style="height:450px;" class="col-sm-6 col-xs-12 col-sm-push-6 sales-1">
-					    	
+			   	    <div class="col-sm-6 col-xs-12 col-sm-push-6 sales-1">	    	
 							<picture>
 									<source media="(max-width:768px)" srcset="img/card-profile.png" >
 									<source media="(min-width:1360px)" srcset="img/card-profile.png">
 									<source media="(min-width:1900px)" srcset="img/card-profile@3x.png">
 									<img src="img/card-profile.png"/>
 						    </picture>
-							<div class="lead-actions ImageLeads" style="">
+							<div class="lead-actions ImageLeads" >
 				   				<img  style="margin-left: 24px;" src="img/lead-transfer.svg"">
 								<img  src="img/lead-comment.svg">
 				   			</div>
@@ -273,7 +279,7 @@
 			<div class="row">
 				<div class="col-sm-12 col-xs-12 padding-top200">
 					<h2 class="align-center adv-tag " style="padding-bottom: 6px !important">Pricing</h2>
-					 <div class="adv-sub-tag" style="padding-right: 0px"> 
+					 <div class="adv-sub-tag price-padding"> 
 					   <h5 class="align-center">Most Value for money solution in market</h5>
 					 </div>
 				</div>
@@ -363,7 +369,7 @@
 				</div>
 			</div>
 			<div class="row" style="padding-top:25px;">
-				<div class="col-sm-7 col-xs-12 ">
+				<div class="col-sm-7 col-xs-12 footerhidden">
 					<div class="footer-text1 width33 float-left inline-block" >
 						<img src="img/india.svg" /><span style="margin-left: 5px;margin-right: 5px">India</span>
 						<div class="inline-block " style="margin-top:-2px"><i class="arrow-down"></i></div>
@@ -388,16 +394,17 @@
 				</div>
 				<div class="col-sm-5 col-xs-12 ">
 					<div class="address align-left inline-block">
+						<h2 class="contactushidden align-center">Contact Us!</h2>
 						<p><span style="color:rgba(84, 106, 123, 0.48);">+91 </span>816 835 7043</p>
 						<p><a href="mailto:support@gymday.in">support@gymday.in</a></p>
 						<p >111, Aggarwal City Sqaure Sector 7<br/> Rohini New Delhi</p>
 					</div>
-					<div class="inline-block align-right padding-left15" style="float:right;width:10%">
+					<div class="inl	ine-block align-right padding-left15 iconhidden" style="float:right;width:10%">
 						<img class="block margin-bottom15" src="img/call.svg"/>
 						<img class="block margin-bottom15" src="img/attherate.svg"/>
 						<img class="block " src="img/address.svg"/>
 					</div>
-					<div class="align-right social-icons">
+					<div class="social-icons">
 						
 						<a target="_blank" href="https://www.facebook.com/gymday.in" class="behance-share margin-right10"><img src="img/facebook(1).svg"/></a>
 	                    <a target="_blank" href="https://www.facebook.com/gymday.in" class="facebook-share margin-right10"><img src="img/twitter.svg"/></a>
@@ -428,7 +435,46 @@
 		</aside>
 		
 	</section>
+	<section class="form-submit">
+		<aside class="demo-form">
+				<span> Get demo</span>
+				  <div class="demo-cross">
+				    <img src="img/cross.svg"/>
+				  </div>
+				<br/>
+	            <span>Please fill in the below details to request demo</span>
+	        <form class="formDemo" action="" method="POST" role="form" id="gform">
+	            <div class="row">
+		            <div class="input-field col s6">
+	         			 <input id="first_name" type="text" class="validate">
+	         		     <label for="first_name">First Name</label>
+	                </div>
+	                <div class="input-field col s6">
+	         			 <input id="last_name" type="text" class="validate">
+	         		     <label for="last_name">Last Name</label>
+	                </div>
+	            </div>
+	            <!-- <div class="input-field">
+	                <span><img class="" src="images/location.svg" alt=""/></span>
+	                <input type="text" placeholder="Pincode" name="pincode" value="" class="form_pincode" maxlength="6" required pattern="[^[1-9][0-9]{5}$]" />
+	            </div>
+	            <div class="input-field">
+	                <span><img class="" src="images/phone.svg" alt=""/></span>
+	                <input type="text" placeholder="Phone no" name="phone" value="" class="form_phone" maxlength="10" required pattern="[789][0-9]{9}" />
+	            </div>
+	            <div class="input-field">
+	                <span><img class="" src="images/email.svg" alt=""/></span>
+	                <input type="email" placeholder="Email(optional)" name="email" value="" class="form_email"/>
+	            </div> -->
+	            <button type="submit" class="form-submit-btn" value="GET DEMO" >GET DEMO</button>
+	        </form>
+		</aside>
+		<aside class="thankyoutoast">
+			
+		</aside>
+	</section>
  	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.11.3.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <!-- jQuery CDN fallback -->
     <script type="text/javascript">
         if (typeof jQuery == 'undefined') {
@@ -452,14 +498,13 @@
 				       }
 				   });
 		    }
-		  })
-
-		 $('.nav-button').click(function(){
+		  
+		$('.nav-button').click(function(){
 			sidefilter = true;
 			$('.nav-button').css('display','none');
 			$('.side-bar').css('width','100%');
 			$('.side-bar-inner').css('width','50%');
-		});
+	      });
 		
 		$('.side-bar-shadow').click(function(){
 			sidefilter = false;
@@ -467,6 +512,40 @@
 			$('.side-bar').css('width','0%');
 			$('.nav-button').css('display','inline-block');
 		});
+
+		$('.action-button').click(function(){
+			$('.demo-form').css('display','block');
+		})
+       	
+       	$("#gform").on("submit",function(e){
+            e.preventDefault();
+
+            var form = document.getElementById("gform");
+            for (var i = 0, element; element = form.elements[i++];) {
+                if (element.value === "")
+                    return false;
+            }
+            var formdata = new FormData(form);
+            var url = 'https://script.google.com/macros/s/AKfycbwnubhlUhoHyGP0Bmnlso9tP5NNypT2tjsCfqD73v9nDaydQW6E/exec';
+
+            fetch(url, {
+                method: 'post',
+                body: formdata
+            })
+            .then((response) => response.json())
+            .then(function(j) {
+                $("#gform").css("display","none"); 
+                $("#thankyou_message").css("display","block");
+            }).catch(console.log);
+
+        });
+		/*$('.submit-form-button').click(function(){
+			$('.demo-form').css('display','none');
+			$('.thankyoutoast').css('display','block')
+		})*/
+        });
+
+		 
 	</script>
 
  </body>
