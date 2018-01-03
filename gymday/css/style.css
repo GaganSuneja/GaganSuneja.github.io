@@ -800,7 +800,7 @@ nav.navbar{
   line-height: 1.29;
   letter-spacing: normal;
   text-align: center;
-  color:#7a51cc;
+  color:#546a7b;
 }
 
 .buy-now-button-1{
@@ -1061,8 +1061,12 @@ nav.navbar{
   } 
   .shadow-shape{
     top: -768px;
+    left: 950px;
   }
   .contactushidden{
+    display: none;
+  }
+  .nav-button{
     display: none;
   }
 }
@@ -1072,6 +1076,9 @@ nav.navbar{
     padding-top:100px;
   }
   .contactushidden{
+    display: none;
+  }
+  .nav-button{
     display: none;
   }
 }
@@ -1084,12 +1091,15 @@ nav.navbar{
     top:-122px;
   }
   .shadow-shape{
-
+    left: 700px;
   }
   .section-uses{
     padding-top:0px;
   }
   .contactushidden{
+    display: none;
+  }
+  .nav-button{
     display: none;
   }
 }
@@ -1103,25 +1113,23 @@ nav.navbar{
       padding-top: 300px;
     }
     .contactushidden{
-    display: none;
-  }
+     display: none;
+    }
+    .nav-button{
+      display: none;
+    }
 }
 
-
-/* @media only screen and (max-width: 768px){
-   .navbar-nav>li{
+@media (max-width:1000px){
+  .navbar-nav>li{
         display: none;
-    }  
-
+  }
    .nav-button{
       display: inline-block;
       float: right ;
-      padding-top: 12px;
+      padding-top: 30px;
     }
-    .nav-image{
-      padding-top: 0px;
-    }
-} */
+}
 @media  (max-width: 768px){
     body{
         width: 100%;
@@ -1563,7 +1571,7 @@ nav.navbar{
   .demo-form{
      width: 85%; 
    }
-   .thankyoutoast{
+  .thankyoutoast{
       width: 85%; 
    }
 }

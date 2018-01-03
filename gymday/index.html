@@ -56,7 +56,7 @@
 						<li><a href="#myPage">home</a></li>
 						<li><a href="#features">features </a></li>
 						<li><a href="#pricing">pricing</a></li>
-						<li><a href="#">blog</a></li>
+						<li><a >blog</a></li>
 						<li><a href="#contactus">support</a></li>
 						<li><a href="#contactus">contact us</a></li>
 						<li><a target="_blank" href="https://app.gymday.in">login</a></li>
@@ -346,12 +346,12 @@
   							<div class="inline-block float-right" style="padding-top: 14px;">
   								<div class="inline-block float-left">
   									<p class="month-price-6"> 
-								     <span style="color: #7e95a3;">Rs.</span>3000
+								     <span style="color: #7e95a3;">Rs.</span>3,000
 								 </p>
   								   <p class="permonth-price-12"> per month</p>
   								</div>
   								<div class="inline-block float-right buy-now-button-2 pointer">
-												  <span >BUY NOW</span>
+									 <span >BUY NOW</span>
 							   </div>
   							</div>			
 						</div>
@@ -388,9 +388,9 @@
 					</div>
 					<div class="footer-text2 width33 inline-block">
 						<ul>
-							<li><a href="" >Home</a></li>
+							<li><a href="#myPage" >Home</a></li>
 							<li><a href="" >About Us</a></li>
-							<li><a href="" >Features</a></li>
+							<li><a href="#features" >Features</a></li>
 							<li><a href="" >Team</a></li>
 							<li><a href="" >Blog</a></li>
 						</ul> 	
@@ -504,7 +504,7 @@
 		var sidefilter = false;
 		$(document).ready(function(){       
          
-		    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+		    $(".navbar a, footer a[href=#myPage]").on('click', function(event) {
 			    // Make sure this.hash has a value before overriding default behavior
 			    if (this.hash !== "") {
 			      // Prevent default anchor click behavior
