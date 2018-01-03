@@ -1031,19 +1031,23 @@ nav.navbar{
 }
 @media (max-width: 1920px){
   .titled-shape{
-    height: 78.5vh;
+    height: 780px;
+    width: 1178px;
+    left: -211px;
+    top: -165px;
   }
   .section-uses{
-    padding-top:100px;
+    padding-top:320px;
   } 
+  .shadow-shape{
+    top: -768px;
+  }
   .contactushidden{
     display: none;
   }
 }
 @media(max-width: 1440px){
-  .titled-shape{
-    height: 101.5vh;
-  }
+ 
   .section-uses{
     padding-top:100px;
   }
@@ -1052,13 +1056,20 @@ nav.navbar{
   }
 }
 @media(max-width: 1366px){
+ 
   .titled-shape{
-    height: 101.5vh;
+    width: 861px;
+    height:768px;
+    left:-200px;
+    top:-122px;
+  }
+  .shadow-shape{
+
   }
   .section-uses{
     padding-top:0px;
   }
- .contactushidden{
+  .contactushidden{
     display: none;
   }
 }
