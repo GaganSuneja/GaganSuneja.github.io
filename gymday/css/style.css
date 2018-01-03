@@ -29,10 +29,7 @@ label, input[type=text], input[type=tel], input[type=email], input[type=password
 ::selection {color: #FFFFFF; background: #333333 }
 ::-moz-selection {color: #FFFFFF; background: #333333 }
 
-
-
 /*margin-top:-1120px for section uses*/
-
 body{
 	background-color: #fafbfc;
 	z-index:1000;
@@ -86,7 +83,8 @@ i{
   display: inline-block;
   padding: 2px;
 }
-
+section{z-index: inherit}
+nav.navbar{border: none;}
 @keyframes rotate {
     from {
         transform: rotate(0deg)
@@ -125,13 +123,6 @@ i{
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-
-section{z-index: inherit}
-
-nav.navbar{
-    border: none;
-}
-
 .card-sm{
   width: 100%;
   height: 336px;
