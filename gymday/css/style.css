@@ -95,6 +95,15 @@ i{
         transform: rotate(360deg)
     }
 }
+
+@-webkit-keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
 .loaderBox{
    width: 30px;
    height: 30px;
@@ -926,6 +935,17 @@ nav.navbar{
          opacity: 1;
     }
 }
+@-webkit-keyframes rolldown {
+    from {
+         margin: -100px auto;
+         opacity: 0;
+    }
+    to {
+         margin: 0px auto;
+         opacity: 1;
+    }
+}
+
 .demo-form{
   width: 392px;
   height: 456px;
