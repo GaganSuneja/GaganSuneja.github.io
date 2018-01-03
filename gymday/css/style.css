@@ -1019,7 +1019,7 @@ background-repeat: no-repeat,no-repeat;  */
 }
 
 .form-submit{
-  position:fixed;
+  /* position:fixed; */
   top: 0px;
   width: 100%;
   height: 100%;
