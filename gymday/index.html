@@ -28,14 +28,17 @@
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 	
+	<link rel="stylesheet" href="css/customform.css">
+ 
 	<link rel="stylesheet" href="css/style.css">
-
- </head>
+ </head>	
  <body>
  	<!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
+     <script>
+        AOS.init();
+    </script>
  	<div class="navigation navbar navbar-fixed-top" id="g-bar">
  		<div class="container">
 				<div class="navbar-header navpadding">	
@@ -83,7 +86,7 @@
 	 					</div>
 	 				
 						<div  class="intro-button action-button pointer">
-	 						<span><a href="" >GET FREE DEMO</a></span>
+	 						<span>GET FREE DEMO</span>
 	 					</div>
 
 	 				</div>
@@ -363,7 +366,7 @@
 				</div>
 				<div class="col-sm-4 col-xs-12">
 					<div class="action-button pointer footer-actionbutton">
-				 		<span><a href="">GET FREE DEMO</a></span>
+				 		<span>GET FREE DEMO</span>
 					 </div>
 				</div>
 			</div>
@@ -434,42 +437,55 @@
 		</aside>
 		
 	</section>
-	<section class="form-submit display-none">
-		<aside class="demo-form">
-				<span> Get demo</span>
-				  <div class="demo-cross">
+	<section class="form-submit" id="demoform">
+		<aside class="demo-form" >
+				<span> Get demo </span>
+				  <div id="cross-btn" class="demo-cross pointer">
 				    <img src="img/cross.svg"/>
 				  </div>
 				<br/>
 	            <span>Please fill in the below details to request demo</span>
 	        <form class="formDemo" action="" method="POST" role="form" id="gform">
-	            <div class="row">
-		            <div class="input-field col s6">
-	         			 <input id="first_name" type="text" class="validate">
+	            <div class="form-group row">
+		            <div class="input-field col-sm-6 col-xs-6" >
+	         			 <input id="first_name" type="text"  required>
 	         		     <label for="first_name">First Name</label>
 	                </div>
-	                <div class="input-field col s6">
-	         			 <input id="last_name" type="text" class="validate">
+	                <div class="input-field col-sm-6 col-xs-6" > 
+	         			 <input id="last_name" type="text" required>
 	         		     <label for="last_name">Last Name</label>
 	                </div>
 	            </div>
-	            <!-- <div class="input-field">
-	                <span><img class="" src="images/location.svg" alt=""/></span>
-	                <input type="text" placeholder="Pincode" name="pincode" value="" class="form_pincode" maxlength="6" required pattern="[^[1-9][0-9]{5}$]" />
+	            <div class="form-group row">
+	            	 <div class="input-field col-sm-12 col-xs-12" >
+	         			 <input id="business_name" type="text" required>
+	         		     <label for="business_name">Business Name</label>
+	                </div>
 	            </div>
-	            <div class="input-field">
-	                <span><img class="" src="images/phone.svg" alt=""/></span>
-	                <input type="text" placeholder="Phone no" name="phone" value="" class="form_phone" maxlength="10" required pattern="[789][0-9]{9}" />
+	            <div class="form-group row">
+	            	 <div class="input-field col-sm-12 col-xs-12" >
+	         			 <input id="phone_number" type="text" maxlength="10"  required>
+	         		     <label for="phone_number">Phone number</label>
+	                </div>
 	            </div>
-	            <div class="input-field">
-	                <span><img class="" src="images/email.svg" alt=""/></span>
-	                <input type="email" placeholder="Email(optional)" name="email" value="" class="form_email"/>
-	            </div> -->
-	            <button type="submit" class="form-submit-btn" value="GET DEMO" >GET DEMO</button>
+	             <div class="form-group row">
+	            	 <div class="input-field col-sm-12 col-xs-12" >
+	         			 <input id="email" type="text"  class="form_email" required>
+	         		     <label for="email">Email</label>
+	                </div>
+	            </div>
+	            <button type="submit" class="form-submit-btn" value="GET DEMO">
+	            	<div class="loaderBox"></div>
+	                 <span >GET DEMO</span>
+	            </button>
 	        </form>
 		</aside>
-		<aside class="thankyoutoast">
-			
+		<aside class="thankyoutoast display-none" id="thankyoumessage" data-aos="fade-down">
+			<span> Details Submitted</span>
+			<div class="block" style="margin: 30px auto">
+				<img src="img/check.svg"/>
+			</div>
+			<h3>Thanks for sharing your details, we will contact you shortly</h3>
 		</aside>
 	</section>
  	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.11.3.min.js"></script>
@@ -479,14 +495,16 @@
             document.write(unescape("%3Cscript src='js/jquery-1.11.3.min.js' type='text/javascript'%3E%3C/script%3E"));
         }
     </script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		var sidefilter = false;
 		$(document).ready(function(){       
+          // $('#demoform').hide();
 		   var scroll_start = 0;
 		   var startchange = $('#startchange');
 		   var offset = startchange.offset();
+		  
 		   if (startchange.length){
 				   $(document).scroll(function() { 
 				      scroll_start = $(this).scrollTop();
@@ -513,10 +531,32 @@
 		});
 
 		$('.action-button').click(function(){
-			$('.demo-form').css('display','block');
+			$('#demoform').css('display','block');
+
 		})
-       	
+       	$('#cross-btn').click(function(){
+       		$('#demoform').css('display','none');
+       		$('input').val("");
+       		$('.form-submit-btn span').show();
+    		$('.loaderBox').css('display','none');
+       	})
+       
+       	 $(".form_phone").on("keypress",function(e){
+            var theEvent = e || window.event;
+            var key = theEvent.keyCode || theEvent.which;
+            key = String.fromCharCode( key );
+            var regex = /[0-9]|\./;
+            if( !regex.test(key) ) {
+              theEvent.returnValue = false;
+              if(theEvent.preventDefault) theEvent.preventDefault();
+            }
+        });
+
        	$("#gform").on("submit",function(e){
+           
+            $('.form-submit-btn span').hide();
+            $('.loaderBox').css('display','inline-block');
+           
             e.preventDefault();
 
             var form = document.getElementById("gform");
@@ -531,17 +571,25 @@
                 method: 'post',
                 body: formdata
             })
-            .then((response) => response.json())
+            .then((response) => {response.json()})
             .then(function(j) {
-                $("#gform").css("display","none"); 
-                $("#thankyou_message").css("display","block");
-            }).catch(console.log);
+            	
+                $(".demo-form").css("display","none");
+                $("#thankyoumessage").css("display","block");
+                $('input').val("")
+                setTimeout(function(){
+                	$("#thankyoumessage").css("display","none");
+                	$('.form-submit-btn span').show();
+            		$('.loaderBox').css('display','none');
+                	$(".demo-form").css('display','block');
+                	$('#demoform').css("display","none");
+                 },3000)
+				            	
+            })
+            .then(console.log())
+            .catch(console.log);
 
         });
-		/*$('.submit-form-button').click(function(){
-			$('.demo-form').css('display','none');
-			$('.thankyoutoast').css('display','block')
-		})*/
         });
 
 		 

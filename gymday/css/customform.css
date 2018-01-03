@@ -1,0 +1,189 @@
+.input-field {
+    position: relative;
+    display: block;
+}
+.input-field>input[type='text'],
+.input-field>input[type='password'],
+.input-field>input[type='email'],
+.input-field>input[type='tel'],
+.input-field>textarea {
+    font-size: 13px;
+    line-height: 16px;
+    padding: 9px;
+    display: inline-block;
+    width: 50%;
+    border-radius: 3px;
+    margin: 13px 0;
+    border: solid 1px #dfe3e9;
+}
+.input-field>.field-state {
+    display: inline-block;
+    width: 48% !important;
+    position: relative;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 8px;
+}
+.input-field>.field-state:after {
+    content: "";
+    font-size: 12px;
+    line-height: 16px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 200%;
+    opacity: 0;
+}
+.input-field input[type='text']:hover,
+.input-field input[type='password']:hover,
+.input-field input[type='email']:hover,
+.input-field input[type='tel']:hover,
+.input-field textarea:hover {
+    border: solid 1px #ced0da;
+}
+.input-field input[type='text']+label,
+.input-field input[type='password']+label,
+.input-field input[type='email']+label,
+.input-field input[type='tel']+label,
+.input-field textarea+label {
+    font-size: 13px;
+    line-height: 16px;
+    position: absolute;
+    top: 23px;
+    left: 8px;
+    padding: 0;
+    text-align: left;
+    color: #7e95a3;
+    background: transparent;
+    cursor: text;
+    transition: all 0.3s;
+}
+.input-field input[type='text']:focus,
+.input-field input[type='password']:focus,
+.input-field input[type='email']:focus,
+.input-field input[type='tel']:focus,
+.input-field textarea:focus {
+    border: solid 1px #633EA5;
+}
+.input-field input[type='text'].active+label,
+.input-field input[type='email'].active+label,
+.input-field input[type='password'].active+label,
+.input-field input[type='tel'].active+label,
+.input-field textarea.active+label,
+.input-field input[type='text']:focus+label,
+.input-field input[type='email']:focus+label,
+.input-field input[type='password']:focus+label,
+.input-field input[type='tel']:focus+label,
+.input-field textarea:focus+label {
+    font-size: 11px;
+    background: white;
+    transform: translate(-3px, -18px);
+    padding: 0 3px;
+}
+
+
+.input-field input[type='text']:focus+label,
+.input-field input[type='email']:focus+label,
+.input-field input[type='password']:focus+label,
+.input-field input[type='tel']:focus+label,
+.input-field textarea:focus+label {
+    color: #633EA5;
+}
+.input-field input[type='text']:focus~.field-state:after,
+.input-field input[type='password']:focus~.field-state:after,
+.input-field input[type='email']:focus~.field-state:after,
+.input-field input[type='tel']:focus~.field-state:after,
+.input-field textarea:focus~.field-state:after,
+.input-field input[type='text']~.field-state:after,
+.input-field input[type='password']~.field-state:after,
+.input-field input[type='email']~.field-state:after,
+.input-field input[type='tel']~.field-state:after,
+.input-field textarea~.field-state:after {
+    /*content: url('../img/info-icon.svg') attr(data-info);*/
+    
+    content: attr(data-info);
+    color: #546a7b;
+    opacity: 1;
+}
+.input-field input[type='text'].invalid:not(:focus),
+.input-field input[type='password'].invalid:not(:focus),
+.input-field input[type='email'].invalid:not(:focus),
+.input-field input[type='tel'].invalid:not(:focus),
+.input-field textarea.invalid:not(:focus),
+.submit-false .input-field input[type='text'].ng-invalid:not(:focus),
+.submit-false .input-field input[type='password'].ng-invalid:not(:focus),
+.submit-false .input-field input[type='email'].ng-invalid:not(:focus),
+.submit-false .input-field input[type='tel'].ng-invalid:not(:focus),
+.submit-false .input-field textarea.ng-invalid:not(:focus) {
+    border: solid 1px #EF767A;
+}
+.input-field input[type='text'].invalid:not(:focus)+label,
+.input-field input[type='password'].invalid:not(:focus)+label,
+.input-field input[type='email'].invalid:not(:focus)+label,
+.input-field input[type='tel'].invalid:not(:focus)+label,
+.input-field textarea.invalid:not(:focus)+label,
+.submit-false .input-field input[type='text'].invalid:not(:focus)+label,
+.submit-false .input-field input[type='password'].invalid:not(:focus)+label,
+.submit-false .input-field input[type='email'].invalid:not(:focus)+label,
+.submit-false .input-field input[type='tel'].invalid:not(:focus)+label,
+.submit-false .input-field textarea.invalid:not(:focus)+label {
+    color: #EF767A;
+}
+.input-field input[type='text'].invalid:not(:focus)~.field-state:after,
+.input-field input[type='password'].invalid:not(:focus)~.field-state:after,
+.input-field input[type='email'].invalid:not(:focus)~.field-state:after,
+.input-field input[type='tel'].invalid:not(:focus)~.field-state:after,
+.input-field textarea.invalid:not(:focus)~.field-state:after {
+    /*content:  url('../img/error-icon.svg') attr(data-error);*/
+    transform: none ;
+    content: attr(data-error);
+    color: #EF767A;
+    opacity: 1;
+}
+.input-field input[type='text'].valid:not(:focus),
+.input-field input[type='password'].valid:not(:focus),
+.input-field input[type='email'].valid:not(:focus),
+.input-field input[type='tel'].valid:not(:focus),
+.input-field textarea.valid:not(:focus) {
+    border: solid 1px #dfe3e9;
+    transform: translate(-3px, -18px);
+}
+.input-field input[type='text']:valid:not(:focus)+label,
+.input-field input[type='password']:valid:not(:focus)+label,
+.input-field input[type='email']:valid:not(:focus)+label,
+.input-field input[type='tel']:valid:not(:focus)+label,
+.input-field textarea:valid:not(:focus)+label {
+    
+    font-size: 11px;
+    background: white;
+    transform: translate(-3px, -18px);
+    padding: 0 3px;
+    color: #7e95a3;
+}
+.input-field input[type='text']:not(:focus).valid~.field-state:after,
+.input-field input[type='password']:not(:focus).valid~.field-state:after,
+.input-field input[type='email']:not(:focus).valid~.field-state:after,
+.input-field input[type='tel']:not(:focus).valid~.field-state:after,
+.input-field textarea:not(:focus).valid~div:after {
+    /*content: url('../img/success-icon.svg')  attr(data-success);*/
+    
+    content: attr(data-success);
+    color: #5FDD9D;
+    opacity: 1;
+}
+.input-field input[type='text'][disabled],
+.input-field input[type='password'][disabled],
+.input-field input[type='email'][disabled],
+.input-field input[type='tel'][disabled],
+.input-field textarea[disabled] {
+    border: solid 1px #dfe3e9 !important;
+    background: #eaeef1;
+    color: #7e95a3;
+}
+.input-field input[type='text'][disabled]+label,
+.input-field input[type='password'][disabled]+label,
+.input-field input[type='email'][disabled]+label,
+.input-field input[type='tel'][disabled]+label,
+.input-field textarea[disabled]+label {
+    display: none;
+}
