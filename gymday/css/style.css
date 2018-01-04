@@ -1065,7 +1065,7 @@ nav.navbar{border: none;}
  
   .section-uses{
     padding-top:100px;
-    margin-top: -1500px;
+    margin-top: -1650px;
   }
   .contactushidden{
     display: none;
@@ -1088,6 +1088,8 @@ nav.navbar{border: none;}
   }
   .section-uses{
     padding-top:0px;
+    margin-top: -1500px;
+
   }
   .contactushidden{
     display: none;
