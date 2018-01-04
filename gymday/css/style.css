@@ -492,7 +492,7 @@ nav.navbar{border: none;}
 }
 .section-uses{
   overflow:hidden;
-  margin-top:-100%;  /* -1120px */
+  margin-top:-94%;  /* -1120px */
 }
 
 .features{
@@ -1065,6 +1065,7 @@ nav.navbar{border: none;}
  
   .section-uses{
     padding-top:100px;
+    margin-top: -1500px;
   }
   .contactushidden{
     display: none;
@@ -1072,6 +1073,7 @@ nav.navbar{border: none;}
   .nav-button{
     display: none;
   }
+
 }
 @media(max-width: 1366px){
  
@@ -1102,7 +1104,7 @@ nav.navbar{border: none;}
     }
     .intro-row{
       padding-top: 300px;
-    }
+    } 
     .contactushidden{
      display: none;
     }
@@ -1121,7 +1123,7 @@ nav.navbar{border: none;}
       padding-top: 30px;
     }
 }
-@media  (max-width: 768px){
+@media  (max-width: 900px){
     body{
         width: 100%;
         overflow-x: hidden;
