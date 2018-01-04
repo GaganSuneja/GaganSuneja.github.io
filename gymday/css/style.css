@@ -1061,6 +1061,11 @@ nav.navbar{border: none;}
     display: none;
   }
 }
+@media(max-width: 1680px){
+  .section-uses{
+    margin-top: -108%;
+  }
+}
 @media(max-width: 1440px){
  
   .section-uses{
