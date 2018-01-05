@@ -338,7 +338,7 @@
 						<div class="inline-block width100 cardpadd3">
 						 	<div class="inline-block float-left ">
 								<div class="block month-duration-1">
-								  <span >1</span>
+								  <span>1</span>
   								</div>
 								<p class="month-1">
 								  month</p>
@@ -430,13 +430,17 @@
 		<aside class="side-bar-shadow">			
 		</aside>	
 		 <aside id="ss" class="side-bar-inner">
-			<ul>
-				<li>1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-				<li>5</li>
-			</ul>
+		 	<div class="side-bar-cross" style="position:absolute;right:16px;top:16px;display: none;">
+			  <img src="img/cross.svg" />
+			</div>
+			<div class="side-bar-list" style="margin-top: 32px;">
+				<ul>
+					<li class="pointer"><a href="#myPage"  >Home</a></li>
+					<li class="pointer"><a href="#features" >Features</a></li>
+					<li class="pointer"><a href="#pricing" >Pricing</a></li>
+					<li class="pointer"><a href="#contactus" >Contact us</a></li>
+				</ul>
+		    </div>
 		</aside>
 		
 	</section>
@@ -504,7 +508,7 @@
 		var sidefilter = false;
 		$(document).ready(function(){       
          
-		    $(".navbar a, footer a[href=#myPage]").on('click', function(event) {
+		    $(".navbar a, footer a[href=#myPage], .side-bar-list a").on('click', function(event) {
 			    // Make sure this.hash has a value before overriding default behavior
 			    if (this.hash !== "") {
 			      // Prevent default anchor click behavior
@@ -521,6 +525,7 @@
 			   
 			        // Add hash (#) to URL when done scrolling (default click behavior)
 			        window.location.hash = hash;
+			        hidesidebar();
 			      });
 			    } // End if
 			  });
@@ -545,16 +550,31 @@
 			sidefilter = true;
 			$('.nav-button').css('display','none');
 			$('.side-bar').css('width','100%');
+			$('.side-bar-cross').css('display','block');
 			$('.side-bar-inner').css('width','50%');
+			$('.side-bar-inner').css('padding','21px 21px 10px 16px');
+			$('.side-bar-list').css('padding-top','16px')
+			$('.side-bar-list').css('padding-left','8px')
+			$('.side-bar-list').css('padding-bottom','16px');
+			
 	      });
 		
-		$('.side-bar-shadow').click(function(){
-			sidefilter = false;
-			$('.side-bar-inner').css('width','0%');	
-			$('.side-bar').css('width','0%');
-			$('.nav-button').css('display','inline-block');
-		});
+		
+		$('.side-bar-cross').click(function(){
+				hidesidebar();
+			});
 
+		function hidesidebar()
+		{
+			    sidefilter = false;
+				$('.side-bar-inner').css('width','0%');	
+				$('.side-bar-cross').css('display','none');
+				$('.side-bar-inner').css('padding','0px');
+				$('.side-bar').css('width','0%');
+				$('.nav-button').css('display','inline-block');
+
+	    };
+		
 		$('.action-button').click(function(){
 			$('#demoform').css('display','block');
 
