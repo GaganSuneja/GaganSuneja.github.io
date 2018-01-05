@@ -73,7 +73,8 @@
 							<h2>Powering the best gyms and fitness studios</h2>
 	 					</div>
 	 					<div class="imageIpad" >
-							<picture>
+						<!-- 	<img src="img/ipad-illustration.svg" /> -->
+						 <picture>
 										<source media="(max-width:768px)" srcset="img/ipad-illustration.png" >
 										<source media="(min-width:1360px)" srcset="img/ipad-illustration.png">
 										<source media="(min-width:1500px)" srcset="img/ipad-illustration@3x.png">
@@ -446,52 +447,48 @@
 	</section>
 	<section class="form-submit" id="demoform">
 		<aside class="demo-form" >
-				<span> Get demo </span>
-				  <div id="cross-btn" class="demo-cross pointer">
-				    <img src="img/cross.svg"/>
-				  </div>
+				<div id="cross-btn" class="demo-cross ">
+				    <img src="img/cross.svg" class="pointer" style="margin-right: 7px;float:right" />
+				</div>
+				 <span id="getDemo"> Get demo </span>
 				<br/>
 	            <span>Please fill in the below details to request demo</span>
-	          <form  action="" method="POST" role="form" id="gform">
-	          	<div class="formDemo">
-		           
-
-					
-		            <div class="form-group row">
-			            <div class="input-field col-sm-6 col-xs-6" >
-
-		         			 <input id="first_name" type="text"  required>
-		         		     <label for="first_name">First Name</label>
-		                </div>
-		                <div class="input-field col-sm-6 col-xs-6" > 
-		         			 <input id="last_name" type="text" required>
-		         		     <label for="last_name">Last Name</label>
-		                </div>
-		            </div>
-		            <div class="form-group row">
-		            	 <div class="input-field col-sm-12 col-xs-12" >
-		         			 <input id="business_name" type="text" required>
-		         		     <label for="business_name">Business Name</label>
-		                </div>
-		            </div>
-		            <div class="form-group row">
-		            	 <div class="input-field col-sm-12 col-xs-12" >
-		         			 <input id="phone_number" type="tel" maxlength="10"  required>
-		         		     <label for="phone_number">Phone number</label>
-		                </div>
-		            </div>
-		             <div class="form-group row">
-		            	 <div class="input-field col-sm-12 col-xs-12" >
-		         			 <input id="email" type="text"  required>
-		         		     <label for="email">Email</label>
-		                </div>
-		            </div>
-		        </div>
-		            <button type="submit" class="form-submit-btn" value="GET DEMO">
-		            	<div class="loaderBox"></div>
-		                 <span >GET DEMO</span>
-		            </button>
-		       </form>
+		        <form  action="" method="POST" role="form" id="gform" novalidate="">
+		          	<div class="formDemo">	
+			            <div class="row">
+				            <div class="input-field col-sm-6 col-xs-6" >
+			         			 <input id="first_name" type="text" required>
+			         		     <label for="first_name">First Name</label>
+			                </div>
+			                <div class="input-field col-sm-6 col-xs-6" > 
+			         			 <input id="last_name" type="text" required>
+			         		     <label for="last_name">Last Name</label>
+			                </div>
+			            </div>
+			            <div class="row">
+			            	 <div class="input-field col-sm-12 col-xs-12" >
+			         			 <input id="business_name" type="text" required>
+			         		     <label for="business_name">Business Name</label>
+			                </div>
+			            </div>
+			            <div class="row">
+			            	 <div class="input-field col-sm-12 col-xs-12" >
+			         			 <input id="phone_number" type="tel" maxlength="10"  required>
+			         		     <label for="phone_number">Phone number</label>
+			                </div>
+			            </div>
+			             <div class="row">
+			            	 <div class="input-field col-sm-12 col-xs-12" >
+			         			 <input id="email" type="text"  required>
+			         		     <label for="email">Email</label>
+			                </div>
+			            </div>
+			        </div>
+			            <button type="submit" class="form-submit-btn" value="GET DEMO" style="margin-top: 11px;">
+			            	<div class="loaderBox"></div>
+			                 <span>GET A DEMO</span>
+			            </button>
+			      </form>
 		</aside>
 		<aside class="thankyoutoast display-none" id="thankyoumessage" data-aos="fade-down">
 			<span> Details Submitted</span>
@@ -630,19 +627,45 @@
               if(theEvent.preventDefault) theEvent.preventDefault();
             }
         });
-
+       	$("input").keyup(function(){
+       		$("input").removeClass('invalid');
+      	})
+        
+       	
        	$("#gform").on("submit",function(e){
-           
-            $('.form-submit-btn span').hide();
-            $('.loaderBox').css('display','inline-block');
-           
+                      
             e.preventDefault();
 
             var form = document.getElementById("gform");
+            
             for (var i = 0, element; element = form.elements[i++];) {
-                if (element.value === "")
-                    return false;
+                console.log(element);
+                if (element.value === ""){
+                
+                    $(element).addClass('invalid');
+                
+                    return false;	
+                }
+               if(element.id=="email")
+               {
+               		var a = element.value.toString();
+
+               		if(a.indexOf('@')==-1){
+               			$(element).addClass('invalid');
+               			console.log("invalid");
+               			return false;
+               		}
+               		if(a.indexOf('.')==-1){
+               			$(element).addClass('invalid');
+               			console.log("invalid");
+               			return false;
+               		}
+               }
             }
+            
+            $('.form-submit-btn span').hide();
+            $('.loaderBox').css('display','inline-block');
+
             var formdata = new FormData(form);
             var url = 'https://script.google.com/macros/s/AKfycbwnubhlUhoHyGP0Bmnlso9tP5NNypT2tjsCfqD73v9nDaydQW6E/exec';
 
@@ -654,7 +677,9 @@
             .then(function(j) {
             	
                 $(".demo-form").css("display","none");
+               
                 $("#thankyoumessage").css("display","block");
+               
                 $('input').val("")
                 setTimeout(function(){
                 	$("#thankyoumessage").css("display","none");

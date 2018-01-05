@@ -296,9 +296,8 @@ nav.navbar{border: none;}
   padding-top: 18px;
 }
 .navigation{
-      
-        background: transparent;
-        z-index: 2;
+  background: transparent;
+  z-index: 2;
 }
 .intro-row{
   padding-top: 110px;
@@ -930,6 +929,8 @@ nav.navbar{border: none;}
   overflow-y: auto;
   display: none;
   background-color:rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 @keyframes rolldown {
     from {
@@ -958,7 +959,7 @@ nav.navbar{border: none;}
   border-radius: 8px;
   background-color: #ffffff;
   margin: 0px auto;
-  padding-top:17px; 
+  padding-top:7px; 
   text-align: center;
   -webkit-animation:rolldown 0.2s linear 0s ;
   -o-animation:rolldown 0.2s linear 0s ;
@@ -980,17 +981,7 @@ nav.navbar{border: none;}
   text-align: left;
   color: #7a51cc;
 }
-.demo-form span:first-child,.thankyoutoast span:first-child{
-  font-family: 'Nunito Sans',sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #0d1f2d;
-}
+
 .demo-form span{
   font-family: 'Nunito Sans',sans-serif;
   font-size: 12px;
@@ -1002,31 +993,56 @@ nav.navbar{border: none;}
   text-align: center;
   color: #546a7b;
 }
-.demo-form span:nth-child(2){
-  color: ;
+#getDemo{
+  font-family: 'Nunito Sans',sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0d1f2d;
 }
+.demo-form span:first-child,.thankyoutoast span:first-child{
+  font-family: 'Nunito Sans',sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0d1f2d;
+}
+
 .demo-cross{
-  float: right;
-  display: inline-block;
-  margin-right: 2px;
-  margin-top: -14px;
+    /* float: right; */
+    /* margin-right: 3px; */
+    display: block;
+    /* margin-top: -19px; */
+    width: 100%;
+    height: 24px;
 }
 .formDemo{
  margin-top: 16px;
  border-top: 1px solid #ced0da;
- padding-top: 36px;
+ padding-top: 17px;
  padding-right:40px;
  padding-left: 36px;
+ margin-bottom: 24px;
 }
 .form-submit-btn{
   width: 100%;
-  height: 48px;
+  height: 64px;
   background-color: #7a51cc;
   border: solid 1px #7a51cc;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 .form-submit-btn span{
   font-family: 'Nunito Sans',sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;

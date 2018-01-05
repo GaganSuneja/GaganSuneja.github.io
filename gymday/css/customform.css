@@ -7,8 +7,8 @@
 .input-field>input[type='email'],
 .input-field>input[type='tel'],
 .input-field>textarea {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 23px;
     padding: 9px;
     display: inline-block;
     width: 50%;
@@ -46,8 +46,8 @@
 .input-field input[type='email']+label,
 .input-field input[type='tel']+label,
 .input-field textarea+label {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 23px;
     position: absolute;
     top: 23px;
     left: 8px;
@@ -75,7 +75,7 @@
 .input-field input[type='password']:focus+label,
 .input-field input[type='tel']:focus+label,
 .input-field textarea:focus+label {
-    font-size: 11px;
+    font-size: 12px;
     background: white;
     transform: translate(-3px, -18px);
     padding: 0 3px;
@@ -154,7 +154,7 @@
 .input-field input[type='tel']:valid:not(:focus)+label,
 .input-field textarea:valid:not(:focus)+label {
     
-    font-size: 11px;
+    font-size: 12px;
     background: white;
     transform: translate(-3px, -18px);
     padding: 0 3px;
