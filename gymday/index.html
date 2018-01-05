@@ -39,7 +39,7 @@
      <script>
         AOS.init();
     </script>
- 	<div class="navigation navbar navbar-fixed-top" id="g-bar">
+ 	<div class="navigation navbar navbar-fixed-top" id="g-bar" style="height: 80px;">
  		<div class="container">
 				<div class="navbar-header navpadding">	
 					<div class="ImageResp inline-block nav-image">
@@ -452,40 +452,46 @@
 				  </div>
 				<br/>
 	            <span>Please fill in the below details to request demo</span>
-	        <form class="formDemo" action="" method="POST" role="form" id="gform">
-	            <div class="form-group row">
-		            <div class="input-field col-sm-6 col-xs-6" >
-	         			 <input id="first_name" type="text"  required>
-	         		     <label for="first_name">First Name</label>
-	                </div>
-	                <div class="input-field col-sm-6 col-xs-6" > 
-	         			 <input id="last_name" type="text" required>
-	         		     <label for="last_name">Last Name</label>
-	                </div>
-	            </div>
-	            <div class="form-group row">
-	            	 <div class="input-field col-sm-12 col-xs-12" >
-	         			 <input id="business_name" type="text" required>
-	         		     <label for="business_name">Business Name</label>
-	                </div>
-	            </div>
-	            <div class="form-group row">
-	            	 <div class="input-field col-sm-12 col-xs-12" >
-	         			 <input id="phone_number" type="tel" maxlength="10"  required>
-	         		     <label for="phone_number">Phone number</label>
-	                </div>
-	            </div>
-	             <div class="form-group row">
-	            	 <div class="input-field col-sm-12 col-xs-12" >
-	         			 <input id="email" type="text"  required>
-	         		     <label for="email">Email</label>
-	                </div>
-	            </div>
-	            <button type="submit" class="form-submit-btn" value="GET DEMO">
-	            	<div class="loaderBox"></div>
-	                 <span >GET DEMO</span>
-	            </button>
-	        </form>
+	          <form  action="" method="POST" role="form" id="gform">
+	          	<div class="formDemo">
+		           
+
+					
+		            <div class="form-group row">
+			            <div class="input-field col-sm-6 col-xs-6" >
+
+		         			 <input id="first_name" type="text"  required>
+		         		     <label for="first_name">First Name</label>
+		                </div>
+		                <div class="input-field col-sm-6 col-xs-6" > 
+		         			 <input id="last_name" type="text" required>
+		         		     <label for="last_name">Last Name</label>
+		                </div>
+		            </div>
+		            <div class="form-group row">
+		            	 <div class="input-field col-sm-12 col-xs-12" >
+		         			 <input id="business_name" type="text" required>
+		         		     <label for="business_name">Business Name</label>
+		                </div>
+		            </div>
+		            <div class="form-group row">
+		            	 <div class="input-field col-sm-12 col-xs-12" >
+		         			 <input id="phone_number" type="tel" maxlength="10"  required>
+		         		     <label for="phone_number">Phone number</label>
+		                </div>
+		            </div>
+		             <div class="form-group row">
+		            	 <div class="input-field col-sm-12 col-xs-12" >
+		         			 <input id="email" type="text"  required>
+		         		     <label for="email">Email</label>
+		                </div>
+		            </div>
+		        </div>
+		            <button type="submit" class="form-submit-btn" value="GET DEMO">
+		            	<div class="loaderBox"></div>
+		                 <span >GET DEMO</span>
+		            </button>
+		       </form>
 		</aside>
 		<aside class="thankyoutoast display-none" id="thankyoumessage" data-aos="fade-down">
 			<span> Details Submitted</span>
@@ -508,7 +514,7 @@
 		var sidefilter = false;
 		$(document).ready(function(){       
          
-		    $(".navbar a, footer a[href=#myPage], .side-bar-list a").on('click', function(event) {
+		    $(".navbar a, footer a[href=#myPage]").on('click', function(event) {
 			    // Make sure this.hash has a value before overriding default behavior
 			    if (this.hash !== "") {
 			      // Prevent default anchor click behavior
@@ -519,17 +525,40 @@
 
 			      // Using jQuery's animate() method to add smooth page scroll
 			      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+			      hidesidebar(true);
 			      $('html, body').animate({
 			        scrollTop: $(hash).offset().top
 			      }, 900, function(){
 			   
 			        // Add hash (#) to URL when done scrolling (default click behavior)
 			        window.location.hash = hash;
-			        hidesidebar();
+			        
 			      });
 			    } // End if
 			  });
-			  
+		   
+		   $(".side-bar-list a").on('click', function(event) {
+			    // Make sure this.hash has a value before overriding default behavior
+			    if (this.hash !== "") {
+			      // Prevent default anchor click behavior
+			      event.preventDefault();
+
+			      // Store hash
+			      var hash = this.hash;
+
+			      // Using jQuery's animate() method to add smooth page scroll
+			      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+			      hidesidebar(false);
+			      $('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      }, 900, function(){
+			   
+			        // Add hash (#) to URL when done scrolling (default click behavior)
+			        window.location.hash = hash;
+			        
+			      });
+			    } // End if
+			  });
 
 		   var scroll_start = 0;
 		   var startchange = $('#startchange');
@@ -540,8 +569,11 @@
 				      scroll_start = $(this).scrollTop();
 				      if((scroll_start > offset.top) && (sidefilter!==true)){
 				          $("#g-bar").css('background-color', '#fafbfc');
+				          $("#g-bar").css('box-shadow', '1px 5px 16px 0px rgba(0, 0, 0, 0.15)');
 				       } else  {
 				          $("#g-bar").css('background-color', 'transparent');
+				          $("#g-bar").css('box-shadow','none');
+
 				       }
 				   });
 		    }
@@ -561,18 +593,20 @@
 		
 		
 		$('.side-bar-cross').click(function(){
-				hidesidebar();
+				hidesidebar(false);
 			});
 
-		function hidesidebar()
-		{
+		function hidesidebar(cross)
+		{		
 			    sidefilter = false;
 				$('.side-bar-inner').css('width','0%');	
 				$('.side-bar-cross').css('display','none');
 				$('.side-bar-inner').css('padding','0px');
 				$('.side-bar').css('width','0%');
-				$('.nav-button').css('display','inline-block');
-
+				if(!cross)
+				{
+				  $('.nav-button').css('display','inline-block');
+				 }
 	    };
 		
 		$('.action-button').click(function(){
